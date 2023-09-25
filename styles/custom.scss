@@ -1,0 +1,20 @@
+$sections-paddings: (
+  sm: (
+    padding:24px,
+  ),
+  md: (
+    padding: 30px,
+  ),
+  lg: (
+    padding: 60px,
+  )
+);
+.sections-paddings{
+  @include a-set($sections-paddings);
+}
+// CUSTOM SECTIONS
+.hero-section{
+  background: #6c6c5b no-repeat center;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
