@@ -13,11 +13,6 @@ $sections-paddings: (
   @include a-set($sections-paddings);
 }
 // CUSTOM SECTIONS
-.hero-section{
-  background: #6c6c5b no-repeat center;
-  background-size: cover;
-  @include a-set($sections-paddings);
-}
 
 .hero-section{
   background: url('../public/img/stock-photo.jpg') #1D1D1B no-repeat center;

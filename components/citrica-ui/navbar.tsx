@@ -5,13 +5,38 @@ import Link from "next/link";
 
 export const navLinks = [
   {
-    id: "about-us",
-    title: "Quienes somos",
+    id: "hero-section",
+    title: "Top",
   },
+  {
+    id: "our-products",
+    title: "Productos",
+  },
+  {
+    id: "parrilla",
+    title: "Mi Parrilla",
+  },
+  {
+    id: "delivery",
+    title: "Jordi Delivery",
+  },
+  {
+    id: "our-partners",
+    title: "Socios",
+  },
+  {
+    id: "carrusel",
+    title: "Videos",
+  },
+  {
+    id: "boutiques",
+    title: "Boutiques",
+  },
+  
 ];
 
 const Navbar = () => {
-  const [active, setActive] = useState("about-us");
+  const [active, setActive] = useState("hero-section");
   const [toggle, setToggle] = useState(false);
 
   const closeSidebar = () => {
@@ -55,30 +80,40 @@ const Navbar = () => {
   });
 
   return (
-    <nav className={`w-full p-3 fixed flex items-center z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-transparent"}
-      `}>
+    <Container >
+    <nav className={` w-full flex p-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-transparent"}
+    `}>
 
       {/* Logo */}
-      {/* <h1 className="text-3xl text-black">Logo</h1> */}
-
+      <picture className={` flex ${colorbg ? "hidden " : "flex"}
+    `}>
+            <img 
+              src='/img/jordi-prime-grill-logo.svg'
+              alt="menu"
+              className=""
+            />
+        </picture>
+    
       {/* Desktop Navigation */}
-      {/* <ul className="list-none sm:flex justify-end items-center flex-1">
+      <ul className=" list-none sm:flex hidden gap-14">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={` hidden font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+            className={`flex text-[#D5B16C] font-normal cursor-pointer text-[16px] ${
+              active === nav.title ? "underline decoration-red-800 decoration-4" : "text-[#D5B16C]"
+            } `}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <Link className="pb-1" href={`#${nav.id}`} prefetch={true}>
+                    {nav.title}
+                  </Link>
           </li>
         ))}
-      </ul> */}
+      </ul>
 
       {/* Mobile Navigation */}
-      <Container >
-        <div ref={menuRef} className="flex flex-1 justify-end items-center">
+     
+        <div ref={menuRef} className=" hidden  flex-1 justify-end items-center">
           <picture>
             <img
               src={toggle ? '/img/icons/Menuclose.svg' : '/img/icons/Menu.svg'}
@@ -91,7 +126,7 @@ const Navbar = () => {
           {/* Sidebar */}
           <div
             className={`${!toggle ? "hidden" : "flex"
-              } p-6 bg-black-gradient absolute top-20 right-5 bg-black-brand mx-4 my-2 min-w-[140px] rounded-xl z-50 `}
+              } p-6 bg-black-gradient absolute top-20 bg-black-brand mx-4 my-2 min-w-[140px] rounded-xl z-50 `}
           >
             <ul className="  list-none flex justify-end items-start flex-1 flex-col">
               {navLinks.map((nav, index) => (
@@ -112,8 +147,9 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </Container>
+        
     </nav>
+      </Container>
   );
 };
 
