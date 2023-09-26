@@ -18,3 +18,21 @@ $sections-paddings: (
   background-size: cover;
   @include a-set($sections-paddings);
 }
+
+.hero-section{
+  background: url('../public/img/stock-photo.jpg') #1D1D1B no-repeat center;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
+
+.carrusel{
+  background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
+
+.boutiques{
+  background: url('../public/img/boutique-bg.jpg') #FFF no-repeat center;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
