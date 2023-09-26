@@ -10,8 +10,10 @@ export default function Home() {
 				<Container>
 					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="animate-fade-right">
 						<div className="flex flex-col h-screen justify-center gap-14">
-							
-							<h2 className="display text-white">
+						<picture>
+								<img className="w-[240px] h-[124px]" src={'/img/jordi-prime-grill-logo.svg'} alt='logo' />
+							</picture>
+							<h2 className="display text-gold-brand">
 								Importación, distribución <br />y procesamiento de carnes <br />angus americana y uruguaya.
 							</h2>
 						</div>
@@ -52,7 +54,6 @@ export default function Home() {
 						/>
 					</Col>
 				</Container>
-
 			</section>
 			<section id="parrilla" className="parrilla">
 				<Container>
@@ -64,10 +65,14 @@ export default function Home() {
 						</div>
 						<p className="copy py-5">Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean. </p>
 					</Col>
+				</Container>
+			</section>
+			<section id="delivery" className="delivery">
+				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
 						<div className="h-44 flex flex-col-reverse justify-center items-center">
 							<picture>
-								<img src={'/img/mi-parrilla.svg'} alt="" />
+								<img src={'###'} alt="" />
 							</picture>
 						</div>
 						<p className="copy py-5">Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean. </p>
