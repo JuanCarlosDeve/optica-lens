@@ -81,7 +81,7 @@ const Navbar = () => {
 
   return (
     <Container >
-    <nav className={` w-full flex p-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-[rgba(0,0,0,0.651)]"}
+    <nav className={`title w-full flex pr-1 pl-1 pt-3 pb-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-[rgba(0,0,0,0.651)]"}
     `}>
 
       {/* Logo */}
@@ -104,7 +104,7 @@ const Navbar = () => {
             } `}
             onClick={() => setActive(nav.title)}
           >
-            <Link className="pb-1 font-normal text-[16px] " href={`#${nav.id}`} prefetch={true}>
+            <Link className="pb-1 " href={`#${nav.id}`} prefetch={true}>
                     {nav.title}
                   </Link>
           </li>
@@ -113,7 +113,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
      
-        <div ref={menuRef} className=" hidden  flex-1 justify-end items-center">
+        <div ref={menuRef} className=" flex md:hidden justify-end items-center">
           <picture>
             <img
               src={toggle ? '/img/icons/Menuclose.svg' : '/img/icons/Menu.svg'}
@@ -132,7 +132,7 @@ const Navbar = () => {
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`  navbar-text-color text-white font-medium cursor-pointer text-[16px]
+                  className={` subtitle navbar-text-color text-white font-medium cursor-pointer text-[16px]
                     } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => {
                     setActive(nav.title);
