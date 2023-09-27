@@ -81,7 +81,7 @@ const Navbar = () => {
 
   return (
     <Container >
-    <nav className={` w-full flex p-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-transparent"}
+    <nav className={` w-full flex p-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-[rgba(0,0,0,0.651)]"}
     `}>
 
       {/* Logo */}
@@ -99,12 +99,12 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`flex text-[#D5B16C] font-normal cursor-pointer text-[16px] ${
+            className={`flex text-[#D5B16C] cursor-pointer ${
               active === nav.title ? "underline decoration-red-800 decoration-4" : "text-[#D5B16C]"
             } `}
             onClick={() => setActive(nav.title)}
           >
-            <Link className="pb-1" href={`#${nav.id}`} prefetch={true}>
+            <Link className="pb-1 font-normal text-[16px] " href={`#${nav.id}`} prefetch={true}>
                     {nav.title}
                   </Link>
           </li>
