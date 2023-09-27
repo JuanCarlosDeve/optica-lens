@@ -159,10 +159,10 @@ export default function Home() {
 				</Container>
 				<Container>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
-						<p className="copy py-5">Lorem ipsum dolor sit amet consectetur. Semper mauris libero enim sed aenean a nunc sed in. Ac mattis venenatis id viverra feugiat. Nunc pellentesque malesuada ipsum lectus felis. Nulla leo auctor diam tristique adipiscing. Pharetra sed nibh viverra sed. Est nunc amet luctus tellus ut nulla eget iaculis enim. Sed aenean tincidunt rhoncus et turpis et ac. Id sed ut adipiscing odio risus nulla. Malesuada. </p>
+						<p className="body py-5">Lorem ipsum dolor sit amet consectetur. Semper mauris libero enim sed aenean a nunc sed in. Ac mattis venenatis id viverra feugiat. Nunc pellentesque malesuada ipsum lectus felis. Nulla leo auctor diam tristique adipiscing. Pharetra sed nibh viverra sed. Est nunc amet luctus tellus ut nulla eget iaculis enim. Sed aenean tincidunt rhoncus et turpis et ac. Id sed ut adipiscing odio risus nulla. Malesuada. </p>
 					</Col>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
-						<p className="copy py-5">Lorem ipsum dolor sit amet consectetur. Semper mauris libero enim sed aenean a nunc sed in. Ac mattis venenatis id viverra feugiat. Nunc pellentesque malesuada ipsum lectus felis. Nulla leo auctor diam tristique adipiscing. Pharetra sed nibh viverra sed. Est nunc amet luctus tellus ut nulla eget iaculis enim. Sed aenean tincidunt rhoncus et turpis et ac. Id sed ut adipiscing odio risus nulla. Malesuada. </p>
+						<p className="body py-5">Lorem ipsum dolor sit amet consectetur. Semper mauris libero enim sed aenean a nunc sed in. Ac mattis venenatis id viverra feugiat. Nunc pellentesque malesuada ipsum lectus felis. Nulla leo auctor diam tristique adipiscing. Pharetra sed nibh viverra sed. Est nunc amet luctus tellus ut nulla eget iaculis enim. Sed aenean tincidunt rhoncus et turpis et ac. Id sed ut adipiscing odio risus nulla. Malesuada. </p>
 					</Col>
 				</Container>
 
@@ -176,7 +176,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section id="boutiques" className="boutiques" >
+			<section id="boutiques" className="boutiques">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center ">
 						<h2 className="headline  mt-28 text-gold-brand">BOUTIQUES</h2>
@@ -188,8 +188,8 @@ export default function Home() {
 							<picture>
 								<img src="/img/icons/location_on.svg" alt="" />
 							</picture>
-							<h2 className="display text-gold-brand">La Molina</h2>
-							<p className="copy text-white mt-10">Av. Circunvalación del Golf 428 Tda 19 - C.C La Fontana</p>
+							<h2 className="title text-gold-brand">La Molina</h2>
+							<p className="body text-white mt-10">Av. Circunvalación del Golf 428 Tda 19 - C.C La Fontana</p>
 						</div>
 					</Col>
 					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
@@ -197,17 +197,17 @@ export default function Home() {
 							<picture>
 								<img src="/img/icons/location_on.svg" alt="" />
 							</picture>
-							<h2 className="display text-gold-brand">Punta Hermosa</h2>
-							<p className="copy text-white mt-10">MZ C1 - LT 26 - Av. Gastón García Rada</p>
+							<h2 className="title text-gold-brand">Punta Hermosa</h2>
+							<p className="body text-white mt-10">MZ C1 - LT 26 - Av. Gastón García Rada</p>
 						</div>
 					</Col>
-					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
+					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center mb-36">
 						<div className="pt-10">
 							<picture>
 								<img src="/img/icons/location_on.svg" alt="" />
 							</picture>
-							<h2 className="display text-gold-brand">Iquitos</h2>
-							<p className="copy text-white mt-10">Jr. Sargento Lores 889</p>
+							<h2 className="title text-gold-brand">Iquitos</h2>
+							<p className="body text-white mt-10">Jr. Sargento Lores 889</p>
 						</div>
 					</Col>
 				</Container>

@@ -7,13 +7,13 @@ const FooterCUI = () => {
         <Container className="flex justify-between">
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center  mb-3 only-lg">
             <div className="flex flex-col">
-              <div className="flex gap-5 mb-1  copy text-gray-brand ">
+              <div className="flex gap-5 mb-1  body text-gray-brand ">
                 <picture className="">
                   <img src={'/img/icons/mail.svg'} alt="mail logo" />
                 </picture>
                 info@jordiprimegrill.com
               </div>
-              <div className="flex gap-4 copy text-gray-brand ">
+              <div className="flex gap-4 body text-gray-brand ">
                 <picture>
                   <img src={'/img/icons/call.svg'} alt="call logo" />
                 </picture>
@@ -30,13 +30,13 @@ const FooterCUI = () => {
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3 not-lg">
             <div className="flex items-center gap-1 mb-8 flex-col">
-              <div className="flex gap-5   copy text-gray-brand ">
+              <div className="flex gap-5   body text-gray-brand ">
                 <picture>
                   <img src={'/img/icons/mail.svg'} alt="mail logo" />
                 </picture>
                 info@corporacionjordi.com
               </div>
-              <div className="flex gap-4 copy text-gray-brand ">
+              <div className="flex gap-4 body text-gray-brand ">
                 <picture>
                   <img src={'/img/icons/call.svg'} alt="call logo" />
                 </picture>
@@ -63,15 +63,15 @@ const FooterCUI = () => {
                   </picture>
                 </Link>
               </div>
-              <span className="flex flex-wrap-reverse justify-end copy  text-gray-brand">
+              <span className="flex flex-wrap-reverse justify-end label text-gray-brand">
               Jordi Prime Grill - 2023 © Copyrights.
               </span>
-              <span className="flex justify-end items-center flex-wrap copy text-gray-brand ">
+              <span className="flex justify-end items-center flex-wrap label text-gray-brand ">
                 All rights reserved.
               </span>
             </div>
           </Col>
-          <Col cols={{ lg: 4, md: 6, sm: 4 }} className="justify-center copy mb-3 not-lg">
+          <Col cols={{ lg: 4, md: 6, sm: 4 }} className="justify-center mb-3 not-lg">
             <div className=" flex  items-center flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] ">
                 <Link href="#">
@@ -90,10 +90,10 @@ const FooterCUI = () => {
                   </picture>
                 </Link>
               </div>
-              <span className="flex flex-wrap-reverse justify-end text-gray-brand">
+              <span className="flex flex-wrap-reverse label justify-end text-gray-brand">
                 Jordi Prime Grill - 2023 © Copyrights.
               </span>
-              <span className="flex justify-end items-center flex-wrap text-gray-brand ">
+              <span className="flex justify-end items-center label flex-wrap text-gray-brand ">
                 All rights reserved.
               </span>
             </div>
