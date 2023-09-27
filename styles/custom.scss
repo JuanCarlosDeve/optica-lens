@@ -31,3 +31,8 @@ $sections-paddings: (
   background-size: cover;
   @include a-set($sections-paddings);
 }
+
+.our-products{
+  background-color: rgba(238,238,237,1);
+  padding-top: 4rem;
+}

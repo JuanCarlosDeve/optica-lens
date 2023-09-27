@@ -8,8 +8,8 @@ export default function Home() {
 			<Navbar />
 			<section id="hero-section" className="hero-section">
 				<Container>
-					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="animate-fade-right">
-						<div className="flex flex-col h-screen justify-center gap-14">
+					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="">
+						<div className="flex flex-col h-screen justify-end gap-14 sm:justify-center">
 						<picture>
 								<img className="w-[240px] h-[124px]" src={'/img/jordi-prime-grill-logo.svg'} alt='logo' />
 							</picture>
@@ -23,33 +23,78 @@ export default function Home() {
 			<section id="our-products" className="our-products">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-gold-brand mb-16">Nuestros Productos</h2>
+						<h2 className="display text-gold-brand mb-12">Nuestros Productos</h2>
 					</Col>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="">
 						<div className="py-6">
-							<p className="">Lorem ipsum dolor sit amet consectetur. Hendrerit eget tempus arcu ultricies tellus dolor cras lorem non. Lectus aenean vitae integer vitae maecenas fames enim malesuada bibendum. Fringilla nulla tortor nunc sed aliquam turpis nisl felis. Hendrerit congue egestas lobortis leo eget vulputate. Diam a eu nec tempus. Magna lobortis est ante at maecenas quam in amet nisl. Consequat nec vulputate enim urna iaculis quisque malesuada nulla eu. Augue aliquet accumsan ac nunc venenatis pretium tortor pharetra.</p>
+							<p className="text-[rgba(29,29,27,1)]">Lorem ipsum dolor sit amet consectetur. Hendrerit eget tempus arcu ultricies tellus dolor cras lorem non. Lectus aenean vitae integer vitae maecenas fames enim malesuada bibendum. Fringilla nulla tortor nunc sed aliquam turpis nisl felis. Hendrerit congue egestas lobortis leo eget vulputate. Diam a eu nec tempus. Magna lobortis est ante at maecenas quam in amet nisl. Consequat nec vulputate enim urna iaculis quisque malesuada nulla eu. Augue aliquet accumsan ac nunc venenatis pretium tortor pharetra.</p>
 						</div>
 					</Col>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }}>
-						<div className="pl-4 py-6">
-							<p className="">Lorem ipsum dolor sit amet consectetur. Hendrerit eget tempus arcu ultricies tellus dolor cras lorem non. Lectus aenean vitae integer vitae maecenas fames enim malesuada bibendum. Fringilla nulla tortor nunc sed aliquam turpis nisl felis. Hendrerit congue egestas lobortis leo eget vulputate. Diam a eu nec tempus. Magna lobortis est ante at maecenas quam in amet nisl. Consequat nec vulputate enim urna iaculis quisque malesuada nulla eu. Augue aliquet accumsan ac nunc venenatis pretium tortor pharetra.</p>
+						<div className="py-6 ">
+							<p className="text-[rgba(29,29,27,1)]">Lorem ipsum dolor sit amet consectetur. Hendrerit eget tempus arcu ultricies tellus dolor cras lorem non. Lectus aenean vitae integer vitae maecenas fames enim malesuada bibendum. Fringilla nulla tortor nunc sed aliquam turpis nisl felis. Hendrerit congue egestas lobortis leo eget vulputate. Diam a eu nec tempus. Magna lobortis est ante at maecenas quam in amet nisl. Consequat nec vulputate enim urna iaculis quisque malesuada nulla eu. Augue aliquet accumsan ac nunc venenatis pretium tortor pharetra.</p>
 						</div>
 					</Col>
 					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
 						<Card
 							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
 							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
 						/>
 					</Col>
 					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
 						<Card
 							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
 							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
 						/>
 					</Col>
 					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
 						<Card
 							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
+							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
+						/>
+					</Col>
+					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
+						<Card
+							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
+							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
+						/>
+					</Col>
+					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
+						<Card
+							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
+							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
+						/>
+					</Col>
+					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
+						<Card
+							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
+							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
+						/>
+					</Col>
+					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
+						<Card
+							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
+							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
+						/>
+					</Col>
+					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
+						<Card
+							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
+							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
+						/>
+					</Col>
+					<Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
+						<Card
+							imageUrl={'/img/image.jpg'}
+							title={'Product name'}
 							description={'Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.'}
 						/>
 					</Col>
