@@ -100,3 +100,38 @@ $not-md-display:(
 .not-md{
   @include a-set($not-md-display);
 }
+
+//
+
+
+$only-lg-nav-display:(
+  sm:(
+    display:none,
+  ),
+  md:(
+    display: none,
+  ),
+  lg:(
+    display: flex,
+  )
+);
+
+.only-lg-nav{
+  @include a-set($only-lg-nav-display);
+}
+
+$only-sm-md-display:(
+  sm:(
+    display:flex,
+  ),
+  md:(
+    display: flex,
+  ),
+  lg:(
+    display: none,
+  )
+);
+
+.only-sm-md{
+  @include a-set($only-sm-md-display);
+}
