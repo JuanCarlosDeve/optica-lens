@@ -81,21 +81,22 @@ const Navbar = () => {
 
   return (
     <Container >
-    <nav className={`title w-full flex pr-1 pl-1 pt-3 pb-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-[rgba(0,0,0,0.651)]"}
+    <nav className={`title w-full flex pr-1 pl-1 pt-3 pb-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] justify-end " : "bg-[rgba(0,0,0,0.651)] justify-around"}
     `}>
 
       {/* Logo */}
-      <picture className={` flex ${colorbg ? "hidden " : "flex"}
+      <picture className={` flex  ${colorbg ? "flex" : "hidden only-sm-md"}
     `}>
             <img 
               src='/img/jordi-prime-grill-logo.svg'
-              alt="menu"
+              alt="logo-nav"
               className=""
             />
         </picture>
     
       {/* Desktop Navigation */}
-      <ul className=" list-none sm:flex hidden gap-14">
+      <ul className="only-lg-nav list-none gap-14"
+      >
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -112,8 +113,9 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Navigation */}
-     
-        <div ref={menuRef} className=" flex md:hidden justify-end items-center">
+      
+        <div ref={menuRef} className="only-sm-md justify-center items-center p-5"
+        >
           <picture>
             <img
               src={toggle ? '/img/icons/Menuclose.svg' : '/img/icons/Menu.svg'}

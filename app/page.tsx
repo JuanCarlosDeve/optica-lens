@@ -8,8 +8,8 @@ export default function Home() {
 			<Navbar />
 			<section id="hero-section" className="hero-section">
 				<Container>
-					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="animate-fade-right">
-						<div className="flex flex-col h-screen justify-center gap-14">
+					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="">
+						<div className="flex flex-col h-screen justify-end gap-14 sm:justify-center">
 						<picture>
 								<img className="w-[240px] h-[124px]" src={'/img/jordi-prime-grill-logo.svg'} alt='logo' />
 							</picture>
@@ -23,7 +23,7 @@ export default function Home() {
 			<section id="our-products" className="our-products">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-gold-brand mb-12">Nuestros Productos</h2>
+						<h2 className="display text-gold-brand mb-12">Nuestros Productos</h2>
 					</Col>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="">
 						<div className="py-6">
