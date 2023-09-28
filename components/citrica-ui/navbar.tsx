@@ -1,6 +1,6 @@
-"use client";
-import { useEffect, useRef, useState } from "react";
-import { Container, Col } from '@citrica/objects'
+'use client'
+import React, { useEffect, useRef, useState } from "react";
+import { Container } from '@citrica/objects';
 import Link from "next/link";
 
 export const navLinks = [
@@ -32,7 +32,6 @@ export const navLinks = [
     id: "boutiques",
     title: "Boutiques",
   },
-  
 ];
 
 const Navbar = () => {
@@ -46,7 +45,7 @@ const Navbar = () => {
   // change nav color scrolling
   const [colorbg, setcolorbg] = useState(false)
   const changeColor = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 700) {
       setcolorbg(true)
     } else {
       setcolorbg(false)
@@ -61,7 +60,7 @@ const Navbar = () => {
     };
   }, []);
 
-  // function close with outside of menu
+  // Function to handle clicks outside of the menu
   const menuRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -74,48 +73,60 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
+  });
 
+  // Function to highlight active section based on scroll position
+  const highlightActiveSection = () => {
+    const sectionEls = document.querySelectorAll("section");
+    let currentSection = "hero-section";
 
+    sectionEls.forEach((sectionEl) => {
+      if (
+        sectionEl.offsetTop <= window.scrollY + 120 &&
+        sectionEl.offsetTop + sectionEl.clientHeight >= window.scrollY + 120
+      ) {
+        currentSection = sectionEl.id;
+      }
+    });
 
+    setActive(currentSection);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", highlightActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", highlightActiveSection);
+    };
   });
 
   return (
-    <Container >
-    <nav className={`title w-full flex pr-1 pl-1 pt-3 pb-3 fixed right-0  box-content z-30 justify-around items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)] justify-end " : "bg-[rgba(0,0,0,0.651)] justify-around"}
-    `}>
+    <Container>
+      <nav className={`title w-full h-20 flex pr-4 pl-2 pt-3 pb-3 fixed right-0  box-content z-30 justify-end items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
+        {/* Logo */}
+        <div className="flex justify-start items-center fixed top-3 left-4 z-40">
+          <picture className={` hidden justify-start pl-10  ${colorbg ? "only-lg-nav" : "hidden"}`}>
+            <img src='/img/jordi-prime-grill-logo.svg' alt="logo-nav" className="" />
+          </picture>
+        </div>
 
-      {/* Logo */}
-      <picture className={` flex  ${colorbg ? "flex" : "hidden only-sm-md"}
-    `}>
-            <img 
-              src='/img/jordi-prime-grill-logo.svg'
-              alt="logo-nav"
-              className=""
-            />
-        </picture>
-    
-      {/* Desktop Navigation */}
-      <ul className="only-lg-nav list-none gap-14"
-      >
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`flex text-[#D5B16C] cursor-pointer ${
-              active === nav.title ? "underline decoration-red-800 decoration-4" : "text-[#D5B16C]"
-            } `}
-            onClick={() => setActive(nav.title)}
-          >
-            <Link className="pb-1 " href={`#${nav.id}`} prefetch={true}>
-                    {nav.title}
-                  </Link>
-          </li>
-        ))}
-      </ul>
+        {/* Desktop Navigation */}
+        <ul className="only-lg-nav list-none gap-14">
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className={`flex text-[#D5B16C] cursor-pointer nav_link ${active === nav.id ? "underline decoration-red-800 decoration-4" : "text-[#D5B16C]"}`}
+              onClick={() => setActive(nav.id)}
+            >
+              <Link className=" pb-1 " href={`#${nav.id}`} prefetch={true}>
+                {nav.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-      {/* Mobile Navigation */}
-      
-        <div ref={menuRef} className="only-sm-md justify-center items-center p-5"
-        >
+        {/* Mobile Navigation */}
+        <div ref={menuRef} className="only-sm-md justify-end items-center p-5 flex-1">
           <picture>
             <img
               src={toggle ? '/img/icons/Menuclose.svg' : '/img/icons/Menu.svg'}
@@ -126,18 +137,14 @@ const Navbar = () => {
           </picture>
 
           {/* Sidebar */}
-          <div
-            className={`${!toggle ? "hidden" : "flex"
-              } p-6 bg-black-gradient absolute top-20 bg-black-brand mx-4 my-2 min-w-[140px] rounded-xl z-50 `}
-          >
-            <ul className="  list-none flex justify-end items-start flex-1 flex-col">
+          <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-20 bg-black-brand mx-4 my-2 min-w-[140px] rounded-xl z-50 `}>
+            <ul className="list-none flex justify-end items-start flex-1 flex-col">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={` subtitle navbar-text-color text-white font-medium cursor-pointer text-[16px]
-                    } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                  className={`subtitle navbar-text-color text-white font-medium cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => {
-                    setActive(nav.title);
+                    setActive(nav.id);
                     closeSidebar();
                   }}
                 >
@@ -149,11 +156,9 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        
-    </nav>
-      </Container>
+      </nav>
+    </Container>
   );
 };
 
 export default Navbar;
-

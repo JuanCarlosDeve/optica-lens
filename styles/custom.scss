@@ -36,3 +36,13 @@ $sections-paddings: (
   background-color: rgba(238,238,237,1);
   padding-top: 4rem;
 }
+
+section[id]{
+  scroll-margin-top:100px;
+}
+
+.nav_link:hover{
+  text-decoration-line: underline;
+  text-decoration-color: #991b1b;
+  text-decoration-thickness: 4px;
+}
