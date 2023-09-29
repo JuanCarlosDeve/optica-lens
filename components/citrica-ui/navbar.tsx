@@ -102,10 +102,10 @@ const Navbar = () => {
 
   return (
     <Container>
-      <nav className={`title w-full h-20 flex pr-4 pl-2 pt-3 pb-3 fixed right-0  box-content z-30 justify-end items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
+      <nav className={`btn w-full h-20 flex pr-4 pl-2 pt-3 pb-3 fixed right-0  box-content z-30 justify-end items-center ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
         {/* Logo */}
         <div className="flex justify-start items-center fixed top-3 left-4 z-40">
-          <picture className={` hidden justify-start pl-10  ${colorbg ? "only-lg-nav" : "hidden"}`}>
+          <picture className={` flex justify-start pl-10  ${colorbg ? "flex" : "hidden"}`}>
             <img src='/img/jordi-prime-grill-logo.svg' alt="logo-nav" className="" />
           </picture>
         </div>
@@ -115,7 +115,7 @@ const Navbar = () => {
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={`flex text-[#D5B16C] cursor-pointer nav_link ${active === nav.id ? "underline decoration-red-800 decoration-4" : "text-[#D5B16C]"}`}
+              className={`flex text-[#D5B16C] cursor-pointer nav_link ${active === nav.id ? "underline decoration-red-800 decoration-[6px]" : "text-[#D5B16C]"}`}
               onClick={() => setActive(nav.id)}
             >
               <Link className=" pb-1 " href={`#${nav.id}`} prefetch={true}>
