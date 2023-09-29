@@ -11,13 +11,13 @@ type CardProps = {
 }
 const Card = ({ imageUrl, title, description, btnLabel, btnAction }: CardProps) => {
   return (
-    <Link href={""} className="flex flex-col hover:shadow-2xl bg-[rgba(255,255,255,1)] p-10 mb-8 rounded-3xl shadow-[-4px_8px_8px_0px_rgba(0,0,0,0.09)]">
+    <div className="flex flex-col bg-[rgba(255,255,255,1)] p-10 mb-8 card-container">
       {imageUrl && (
         <picture className="flex justify-center">
           <img className="rounded-lg" src={imageUrl} alt="" />
         </picture>
       )}
-      {title && (
+       {title && (
         <h2 className=" text-[#D5B16C] mt-10 text-3xl font-medium leading-6 tracking-wider">{title}</h2>
       )}
       {description && (
