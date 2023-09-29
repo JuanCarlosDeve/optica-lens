@@ -119,16 +119,16 @@ export default function Home() {
 								</p>
 							</Col>
 							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex justify-end" >
-							<Link className=" flex justify-center bg-black-brand text-gold-lightest button items-center  border-2 rounded-xl w-[179px] h-[40px]" href='Ver-todos'>
-						Visitar
-					</Link>
+								<Link className=" flex justify-center bg-black-brand text-gold-lightest label items-center  border-2 rounded-md w-[179px] h-[40px]" href='Ver-todos'>
+									Visitar
+								</Link>
 							</Col>
 						</Container>
 					</Col>
 				</Container>
 			</section>
-			<section id="delivery" className="our-products">
-				<Container >
+			<section id="delivery" className="our-products ">
+				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center mb-14 ">
 						<div className=" flex mt-16 mb-14 headline justify-center items-center">
 							<h2>Logo Jordi Delivery</h2>
@@ -143,7 +143,7 @@ export default function Home() {
 								</p>
 							</Col>
 							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex  justify-end" >
-								<Link className=" flex justify-center bg-black-brand text-gold-lightest button items-center  border-2 rounded-xl w-[179px] h-[40px]" href='Ver-todos'>
+								<Link className=" flex justify-center bg-black-brand text-gold-lightest label items-center  border-2 rounded-md w-[179px] h-[40px]" href='Ver-todos'>
 									Visitar
 								</Link>
 							</Col>
@@ -189,11 +189,6 @@ export default function Home() {
 						</picture>
 					</Col>
 				</Container>
-
-				
-				
-				
-				
 				<Container>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
 						<p className="body py-5">Lorem ipsum dolor sit amet consectetur. Semper mauris libero enim sed aenean a nunc sed in. Ac mattis venenatis id viverra feugiat. Nunc pellentesque malesuada ipsum lectus felis. Nulla leo auctor diam tristique adipiscing. Pharetra sed nibh viverra sed. Est nunc amet luctus tellus ut nulla eget iaculis enim. Sed aenean tincidunt rhoncus et turpis et ac. Id sed ut adipiscing odio risus nulla. Malesuada. </p>

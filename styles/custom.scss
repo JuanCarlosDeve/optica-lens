@@ -14,11 +14,32 @@ $sections-paddings: (
 }
 // CUSTOM SECTIONS
 
+$bg-hero-section: (
+  sm: (
+    background: url('/img/stock-photo-sm.jpg') #1D1D1B no-repeat center,
+    background-size: cover,
+  ),
+  md: (
+    background: url('/img/stock-photo-sm.jpg') #1D1D1B no-repeat center,
+    background-size: cover,
+  ),
+  lg: (
+    background: url('/img/stock-photo.jpg') #1D1D1B no-repeat center,
+    background-size: cover,
+  )
+);
+
 .hero-section{
-  background: url('../public/img/stock-photo.jpg') #1D1D1B no-repeat center;
-  background-size: cover;
+  @include a-set($bg-hero-section);
   @include a-set($sections-paddings);
 }
+
+// .hero-section-sm{
+//   background: url ('../public/img/stock-photo-sm.jpg') #1D1D1B no-repeat center;
+//   background-size: cover;
+  
+// }
+
 
 .carrusel{
   background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
@@ -41,9 +62,26 @@ section[id]{
   scroll-margin-top:100px;
 }
 
-.nav_link:hover{
-  text-decoration-line: underline;
-  text-decoration-color: #991b1b;
-  text-decoration-thickness: 6px;
+
+.nav_link{
+    text-decoration: none;
+    background-image: linear-gradient(rgba(228,14,32,1), rgba(228,14,32,1));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size .4s;
+}
+
+.nav_link:hover{  
+    background-size: 100% 3px;
+}
+
+.nav_link_active{
+  text-decoration: none;
+  background-image: linear-gradient(rgba(228,14,32,1), rgba(228,14,32,1));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  transition: background-size .4s;
 }
 
