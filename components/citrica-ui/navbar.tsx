@@ -82,8 +82,8 @@ const Navbar = () => {
 
     sectionEls.forEach((sectionEl) => {
       if (
-        sectionEl.offsetTop <= window.scrollY + 100 &&
-        sectionEl.offsetTop + sectionEl.clientHeight >= window.scrollY + 100
+        sectionEl.offsetTop <= window.scrollY + 120 &&
+        sectionEl.offsetTop + sectionEl.clientHeight >= window.scrollY + 120
       ) {
         currentSection = sectionEl.id;
       }
