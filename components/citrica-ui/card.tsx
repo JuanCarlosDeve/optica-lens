@@ -10,10 +10,10 @@ type CardProps = {
 }
 const Card = ({ imageUrl, title, description, btnLabel, btnAction }: CardProps) => {
   return (
-    <div className="flex flex-col bg-[rgba(255,255,255,1)] p-10 mb-8 rounded-2xl shadow-[-4px_8px_8px_0px_rgba(0,0,0,0.09)]">
+    <div className="flex flex-col bg-[rgba(255,255,255,1)] p-10 mb-8 rounded-3xl shadow-[-4px_8px_8px_0px_rgba(0,0,0,0.09)]">
       {imageUrl && (
         <picture>
-          <img className="rounded-3xl" src={imageUrl} alt="" />
+          <img className="rounded-lg" src={imageUrl} alt="" />
         </picture>
       )}
        {title && (
