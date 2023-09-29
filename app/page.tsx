@@ -1,6 +1,7 @@
 import { Container, Col } from "@citrica/objects";
 import Card from "@/components/citrica-ui/card";
 import Navbar from "@/components/citrica-ui/navbar";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -101,26 +102,52 @@ export default function Home() {
 				</Container>
 			</section>
 			<section id="parrilla" className="parrilla">
-				<Container>
-					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
-						<div className="h-44 flex flex-col-reverse justify-center items-center">
+				<Container >
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center mb-14">
+						<div className=" flex mt-16 mb-14 flex-col-reverse justify-center items-center">
 							<picture>
 								<img src={'/img/mi-parrilla.svg'} alt="" />
 							</picture>
 						</div>
-						<p className="copy py-5">Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean. </p>
+						<Container>
+							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="mb-[32px]" >
+								<h2 className="flex items-center mb-11 justify-start headline text-gold-brand">
+									Lorem ipsum
+								</h2>
+								<p className="flex text-left copy py-5">
+									Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean.
+								</p>
+							</Col>
+							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex justify-end" >
+								<Link className=" flex justify-center bg-black-brand text-gold-lightest label items-center  border-2 rounded-md w-[179px] h-[40px]" href='Ver-todos'>
+									Visitar
+								</Link>
+							</Col>
+						</Container>
 					</Col>
 				</Container>
 			</section>
-			<section id="delivery" className="delivery">
+			<section id="delivery" className="our-products ">
 				<Container>
-					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
-						<div className="h-44 flex flex-col-reverse justify-center items-center">
-							<picture>
-								<img src={'###'} alt="" />
-							</picture>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center mb-14 ">
+						<div className=" flex mt-16 mb-14 headline justify-center items-center">
+							<h2>Logo Jordi Delivery</h2>
 						</div>
-						<p className="copy py-5">Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean. </p>
+						<Container>
+							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="mb-[32px]" >
+								<h2 className="flex items-center mb-11 justify-start headline text-gold-brand">
+									Lorem ipsum
+								</h2>
+								<p className="flex text-left copy py-5">
+									Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean.
+								</p>
+							</Col>
+							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex  justify-end" >
+								<Link className=" flex justify-center bg-black-brand text-gold-lightest label items-center  border-2 rounded-md w-[179px] h-[40px]" href='Ver-todos'>
+									Visitar
+								</Link>
+							</Col>
+						</Container>
 					</Col>
 				</Container>
 			</section>
@@ -151,7 +178,12 @@ export default function Home() {
 							<img width={194} height={165} src={'/img/Logoipsum4.svg'} alt="" />
 						</picture>
 					</Col>
-					<Col cols={{ lg: 2, md: 3, sm: 4 }} className="center mb-14">
+					<Col cols={{ lg: 2, md: 3, sm: 4 }} className="center mb-14 only-lg">
+						<picture>
+							<img width={194} height={165} src={'/img/Logoipsum5.svg'} alt="" />
+						</picture>
+					</Col>
+					<Col cols={{ lg: 12, md: 5, sm: 4 }} className=" flex justify-start mb-14 not-lg">
 						<picture>
 							<img width={194} height={165} src={'/img/Logoipsum5.svg'} alt="" />
 						</picture>
