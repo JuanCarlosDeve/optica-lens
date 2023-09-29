@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link"
 import ButtonCUI from "./button"
 
 type CardProps = {
@@ -10,9 +11,9 @@ type CardProps = {
 }
 const Card = ({ imageUrl, title, description, btnLabel, btnAction }: CardProps) => {
   return (
-    <div className="flex flex-col bg-[rgba(255,255,255,1)] p-10 mb-8 card-container">
+    <Link href={""} className="flex flex-col bg-[rgba(255,255,255,1)] p-10 mb-8 card-container">
       {imageUrl && (
-        <picture>
+        <picture className="flex justify-center">
           <img className="rounded-lg" src={imageUrl} alt="" />
         </picture>
       )}
@@ -28,7 +29,7 @@ const Card = ({ imageUrl, title, description, btnLabel, btnAction }: CardProps) 
         </div>
       )}
 
-    </div>
+    </Link>
   )
 }
 

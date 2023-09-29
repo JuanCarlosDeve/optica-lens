@@ -78,12 +78,12 @@ const Navbar = () => {
   // Function to highlight active section based on scroll position
   const highlightActiveSection = () => {
     const sectionEls = document.querySelectorAll("section");
-    let currentSection = "hero-section";
+    let currentSection = "";
 
     sectionEls.forEach((sectionEl) => {
       if (
-        sectionEl.offsetTop <= window.scrollY + 120 &&
-        sectionEl.offsetTop + sectionEl.clientHeight >= window.scrollY + 120
+        sectionEl.offsetTop <= window.scrollY + 100 &&
+        sectionEl.offsetTop + sectionEl.clientHeight >= window.scrollY + 100
       ) {
         currentSection = sectionEl.id;
       }
@@ -103,11 +103,11 @@ const Navbar = () => {
   return (
     <nav className={`btn w-full fixed right-0  box-content z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
       <Container>
-        <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-20 flex justify-end items-center pr-4 pl-2 pt-3 pb-3">
+        <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-16 flex justify-end items-center pr-4 pl-2 pt-3 pb-3">
           {/* Logo */}
-          <div className="flex justify-start items-center fixed top-3 left-4 z-40">
-            <picture className={` flex justify-start pl-10  ${colorbg ? "flex" : "hidden"}`}>
-              <img src='/img/jordi-prime-grill-logo.svg' alt="logo-nav" className="" />
+          <div className="flex justify-start items-center fixed left-4 z-40">
+            <picture className={` flex justify-start pl-10 pb-2  ${colorbg ? "flex" : "hidden"}`}>
+              <img src='/img/jordi-prime-grill-logo.svg' alt="logo-nav" className="w-28" />
             </picture>
           </div>
 
@@ -116,7 +116,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`flex text-[#D5B16C] cursor-pointer nav_link ${active === nav.id ? "underline decoration-red-800 decoration-[6px]" : "text-[#D5B16C]"}`}
+                className={`flex text-[#D5B16C] cursor-pointer nav_link ${active === nav.id ? "nav_link_active" : "text-[#D5B16C]"}`}
                 onClick={() => setActive(nav.id)}
               >
                 <Link className=" pb-1 " href={`#${nav.id}`} prefetch={true}>
