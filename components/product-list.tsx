@@ -6,134 +6,134 @@ export const productImg = [
   {
     title: "Costilla st louis",
     url: "/img/cerdo-americano--costilla-st-louis-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Costillar",
     url: "/img/cerdo-americano--costillar-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Solomillo",
     url: "/img/cerdo-americano--solomillo-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Asado de Tira 3h",
     url: "/img/cortes-americanos--asado-de-tira-3h-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Asado de Tira 4h",
     url: "/img/cortes-americanos--asado-de-tira-4h-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Asado de Tira sin h",
     url: "/img/cortes-americanos--asado-de-tira-sin-h-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Bife Ancho",
     url: "/img/cortes-americanos--bife-ancho-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Bife-Angosto",
     url: "/img/cortes-americanos--bife-angosto-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Brisket",
     url: "/img/cortes-americanos--brisket-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Cocktail Ribs",
     url: "/img/cortes-americanos--cocktail-ribs-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Colita de Cuadril",
     url: "/img/cortes-americanos--colita-de-cuadril-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Cowboy",
     url: "/img/cortes-americanos--cowboy-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Entraña Fina",
     url: "/img/cortes-americanos--entraña-fina-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Entrana Gruesa",
     url: "/img/cortes-americanos--entrana-gruesa-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Frank Steak",
     url: "/img/cortes-americanos--frank-steak-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Picanha",
     url: "/img/cortes-americanos--picanha-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Tbone",
     url: "/img/cortes-americanos--tbone-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Tomahawk",
     url: "/img/cortes-americanos--tomahawk-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Bife Ancho Sur Meat",
     url: "/img/cortes-sur-meat--bife-ancho-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Bife Angosto Sur Meat",
     url: "/img/cortes-sur-meat--bife-angosto-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Colita de Cuadril Sur Meat",
     url: "/img/cortes-sur-meat--colita-de-cuadril-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Lomo Fino Sur Meat",
     url: "/img/cortes-sur-meat--lomo-fino-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Medallon de Lomo Sur Meat",
     url: "/img/cortes-sur-meat--medallon-de-lomo-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Picanha Sur Meat",
     url: "/img/cortes-sur-meat--picanha-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Cerdo Chuleta Sur Meat",
     url: "/img/cortes-sur-meat-cerdo--chuleta-800px.jpg",
-    description:"",
+    description: "",
   },
   {
     title: "Cerdo Panceta con Piel Sur Meat",
     url: "/img/cortes-sur-meat-cerdo--panceta-con-piel-800px.jpg",
-    description:"",
+    description: "",
   },
-  
+
 ];
 
 
@@ -155,14 +155,14 @@ const ProductsList = () => {
         </div>
       </Col>
       {productImg.map((product) => (
-  <Col key={product.title} className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
-    <Card
-      imageUrl={product.url}
-      title={product.title}
-      description={`Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.`}
-    />
-  </Col>
-))}
+        <Col key={product.title} className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
+          <Card
+            imageUrl={product.url}
+            title={product.title}
+            description={`Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.`}
+          />
+        </Col>
+      ))}
     </Container>
   )
 }
