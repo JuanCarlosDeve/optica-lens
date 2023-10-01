@@ -1,6 +1,10 @@
+"use client";
+
+
 import { Container, Col } from "@citrica/objects";
 import Card from "@/components/citrica-ui/card";
-
+import { useState } from "react";
+import Modal from "./citrica-ui/modal";
 
 export const productImg = [
   {
@@ -139,6 +143,17 @@ export const productImg = [
 
 
 const ProductsList = () => {
+
+  const [selectedProduct, setSelectedProduct] = useState<any | null>(null);
+
+  const openModal = (product: any) => {
+    setSelectedProduct(product);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+  };
+
   return (
     <Container>
       <Col cols={{ lg: 12, md: 6, sm: 4 }}>
@@ -156,13 +171,22 @@ const ProductsList = () => {
       </Col>
       {productImg.map((product) => (
         <Col key={product.title} className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
-          <Card
+          <Card 
             imageUrl={product.url}
             title={product.title}
             description={`Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.`}
           />
+          {selectedProduct && (
+        <Modal
+          imageUrl={selectedProduct.url}
+          title={selectedProduct.title}
+          description={selectedProduct.description}
+          onClose={closeModal}
+        />
+      )}
         </Col>
       ))}
+      
     </Container>
   )
 }
