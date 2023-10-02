@@ -7,10 +7,11 @@ type ModalProps = {
   imageUrl?: string | null;
   title?: string | null;
   description?: string | null;
+  url2?: string | null;
   onClose: () => void;
 };
 
-const Modal = ({ imageUrl, title, description, onClose }: ModalProps) => {
+const Modal = ({ imageUrl, title, description, url2, onClose }: ModalProps) => {
 
   const modalContentRef = useRef<HTMLDivElement | null>(null);
 
@@ -35,7 +36,7 @@ const Modal = ({ imageUrl, title, description, onClose }: ModalProps) => {
         <img className="w-[40px] h-[40px] z- " src="/img/icons/Menuclose.svg" alt="menuclose" />
       </button>
 
-      <div className="modal-content p-16 gap-10" ref={modalContentRef}>
+      <div className="modal-content p-16 gap-10 box-border" ref={modalContentRef}>
         {imageUrl && (
           <div className="flex flex-1 ">
             <img className=" w-full h-full rounded-2xl " src={imageUrl} alt="" />
@@ -43,24 +44,25 @@ const Modal = ({ imageUrl, title, description, onClose }: ModalProps) => {
         )}
 
 
-
-        <div className="flex-1 flex-col flex gap-3 " >
-          <div className="modal-content-tex flex flex-col gap-3" >
+        <div className="modal-content-second" >
+          <div className="modal-content-tex" >
             {title && (
-              <h2 className="modal-title ">{title}</h2>
+              <h2 className="modal-title">{title}</h2>
             )}
             {description && (
               <p className="modal-description ">{description}</p>
             )}
           </div>
-          <div className="flex gap-1 items-center">
-            <picture className="flex-col gap-6 flex flex-1 items-center ">
-              <img className="flex h-[60px]" src="/img/icons/angus-golden-beef.svg" alt="" />
-              <img  className=" flex h-[60px]" src="/img/icons/angus-golden-beef.svg" alt="" />
+          <div className="modal-content-second-img">
+            <picture className="modal-content-second-img-small">
+              <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
+              <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
             </picture>
-            <picture className="flex-[2] ">
-              <img src="/img/cortes-angus---01-800px.jpg" alt="" />
-            </picture>
+            {url2 && (
+              <picture className="flex-[2] ">
+                <img src={url2} alt="" />
+              </picture>
+            )}
           </div>
         </div>
 

@@ -11,8 +11,9 @@ type CardProps = {
   description?: string | null
   btnLabel?: string | null
   btnAction?: () => void | null
+  url2?: string | null
 }
-const Card = ({ imageUrl, title, description, btnLabel, btnAction }: CardProps) => {
+const Card = ({ imageUrl, title, description, btnLabel, btnAction, url2 }: CardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -48,6 +49,7 @@ const Card = ({ imageUrl, title, description, btnLabel, btnAction }: CardProps) 
           imageUrl={imageUrl}
           title={title}
           description={description}
+          url2={url2}
           onClose={closeModal}
         />
       )}

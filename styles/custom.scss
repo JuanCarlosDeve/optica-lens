@@ -70,11 +70,12 @@ section[id]{
     background-repeat: no-repeat;
     background-size: 0% 3px;
     transition: background-size .4s;
+    &:hover{
+      background-size: 100% 3px;
+    }
 }
 
-.nav_link:hover{  
-    background-size: 100% 3px;
-}
+
 
 .nav_link_active{
   text-decoration: none;
