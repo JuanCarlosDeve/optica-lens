@@ -32,36 +32,37 @@ $modal-content: (
   sm: (
     display: flex,
     flex-direction: column,
-    width: 50%,
+    width: 90%,
     border-radius: 24px,
     background: white,
     color: #000,
-    padding: 1rem,
+    height: 100%,
+    margin-top: 110px,
+    overflow: auto,
   ),
   md: (
     display: flex,
     flex-direction: row,
-    width: 70%,
+    width: 80%,
     border-radius: 24px,
     background: white,
     color: #000,
-    padding: 2rem,
+    height: auto,
   ),
   lg: (
     display: flex,
     flex-direction: row,
+    height: auto,
     width: 70%,
     border-radius: 24px,
     background: white,
     color: #000,
-    padding: 2rem,
-    
   )
 );
 
 .modal-content {
   max-width: 100%;
-    height: auto;
+  padding:30px 20px;
   @include a-set($modal-content);
   
 }

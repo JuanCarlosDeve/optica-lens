@@ -1,6 +1,7 @@
 "use client";
 
 
+import { Container, Col } from "@citrica/objects";
 import React, { useRef, useEffect } from "react";
 
 type ModalProps = {
@@ -33,44 +34,42 @@ const Modal = ({ imageUrl, title, description, url2, onClose }: ModalProps) => {
   return (
     <div className="modal-bg flex-col items-center" >
       <button className="fixed top-3 right-3  flex justify-end w-full " onClick={onClose} >
-        <img className="w-[40px] h-[40px] z- " src="/img/icons/Menuclose.svg" alt="menuclose" />
+        <img className="w-[40px] h-[40px] z-9 " src="/img/icons/Menuclose.svg" alt="menuclose" />
       </button>
 
       <div className="modal-content p-16 gap-10 box-border" ref={modalContentRef}>
-        {imageUrl && (
-          <div className="flex flex-1 ">
-            <img className=" w-full h-full rounded-2xl " src={imageUrl} alt="" />
-          </div>
-        )}
-
-
-        <div className="modal-content-second" >
-          <div className="modal-content-tex" >
-            {title && (
-              <h2 className="modal-title">{title}</h2>
+        <Container>
+          <Col cols={{lg:6, md:3, sm:4}}>
+            {imageUrl && (
+              <div className="flex flex-1 ">
+                <img className=" w-full h-full rounded-2xl" src={imageUrl} alt="" />
+              </div>
             )}
-            {description && (
-              <p className="modal-description ">{description}</p>
-            )}
-          </div>
-          <div className="modal-content-second-img">
-            <picture className="modal-content-second-img-small">
-              <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
-              <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
-            </picture>
-            {url2 && (
-              <picture className="flex-[2] ">
-                <img src={url2} alt="" />
-              </picture>
-            )}
-          </div>
-        </div>
-
-
-
-
-
-
+          </Col>
+          <Col cols={{lg:6, md:3, sm:4}}>
+            <div className="modal-content-second" >
+              <div className="modal-content-tex" >
+                {title && (
+                  <h2 className="modal-title">{title}</h2>
+                )}
+                {description && (
+                  <p className="modal-description ">{description}</p>
+                )}
+              </div>
+              <div className="modal-content-second-img">
+                <picture className="modal-content-second-img-small">
+                  <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
+                  <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
+                </picture>
+                {url2 && (
+                  <picture className="flex-[2]">
+                    <img src={url2} alt="" />
+                  </picture>
+                )}
+              </div>
+            </div>
+          </Col>
+        </Container>
       </div>
     </div>
   );
