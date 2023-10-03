@@ -31,7 +31,7 @@ $bg-hero-section: (
 
 .hero-section{
   @include a-set($bg-hero-section);
-  @include a-set($sections-paddings);
+  // @include a-set($sections-paddings);
 }
 
 // .hero-section-sm{

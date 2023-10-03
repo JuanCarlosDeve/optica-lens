@@ -101,7 +101,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className={`btn w-full fixed right-0  box-content z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
+    <nav className={`btn fixed right-0  box-content z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
       <Container>
         <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-16 flex justify-end items-center pr-4 pl-2 pt-3 pb-3">
           {/* Logo */}

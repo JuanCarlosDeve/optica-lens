@@ -15,7 +15,7 @@ export default function Home() {
 								<img className="w-[240px] h-[124px]" src={'/img/jordi-prime-grill-logo.svg'} alt='logo' />
 							</picture>
 							<h2 className="display text-gold-brand">
-								Importación, distribución <br />y procesamiento de carnes angus americana y uruguaya.
+								Importación, distribución <br />y procesamiento de carnes angus americana y uruguaya
 							</h2>
 						</div>
 					</Col>
