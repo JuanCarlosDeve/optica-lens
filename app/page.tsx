@@ -74,13 +74,13 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section id="our-partners" className="mx-28 my-28">
+			<section id="our-partners" className=" my-28">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
 						<h2 className="headline mb-12 text-gold-brand">Nuestros socios estratégicos</h2>
 					</Col>
 				</Container>
-				<Container className="flex items-center mx-28 my-28 justify-around">
+				<Container className="flex items-center  my-28 justify-around">
 					<Col cols={{ lg: 2, md: 3, sm: 4 }} className="center mb-14">
 						<picture>
 							<img width={194} height={165} src={'/img/Logoipsum.svg'} alt="" />
@@ -96,17 +96,17 @@ export default function Home() {
 							<img width={194} height={165} src={'/img/Logoipsum3.svg'} alt="" />
 						</picture>
 					</Col>
-					<Col cols={{ lg: 2, md: 3, sm: 4 }} className="center mb-14">
+					<Col cols={{ lg: 2, md: 3, sm: 4 }} className="center  mb-14">
 						<picture>
 							<img width={194} height={165} src={'/img/Logoipsum4.svg'} alt="" />
 						</picture>
 					</Col>
-					<Col cols={{ lg: 2, md: 3, sm: 4 }} className="center mb-14 only-lg">
+					<Col cols={{ lg: 2, md: 3, sm: 4 }} className="center mb-14 not-md">
 						<picture>
 							<img width={194} height={165} src={'/img/Logoipsum5.svg'} alt="" />
 						</picture>
 					</Col>
-					<Col cols={{ lg: 12, md: 5, sm: 4 }} className=" flex justify-start mb-14 not-lg">
+					<Col cols={{ lg: 2, md: 4, sm: 4 }} className=" flex justify-start mb-14 only-md">
 						<picture>
 							<img width={194} height={165} src={'/img/Logoipsum5.svg'} alt="" />
 						</picture>
@@ -120,7 +120,6 @@ export default function Home() {
 						<p className="body py-5">Lorem ipsum dolor sit amet consectetur. Semper mauris libero enim sed aenean a nunc sed in. Ac mattis venenatis id viverra feugiat. Nunc pellentesque malesuada ipsum lectus felis. Nulla leo auctor diam tristique adipiscing. Pharetra sed nibh viverra sed. Est nunc amet luctus tellus ut nulla eget iaculis enim. Sed aenean tincidunt rhoncus et turpis et ac. Id sed ut adipiscing odio risus nulla. Malesuada. </p>
 					</Col>
 				</Container>
-
 			</section>
 			<section id="carrusel" className="carrusel">
 				<Container>
