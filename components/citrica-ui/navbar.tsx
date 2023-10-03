@@ -101,13 +101,13 @@ const Navbar = () => {
   });
 
   return (
-    <nav className={`btn fixed right-0  box-content z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
+    <nav className={`btn w-screen fixed box-border z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
       <Container>
-        <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-16 flex justify-end items-center pr-4 pl-2 pt-3 pb-3">
+        <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-16 flex justify-between items-center pt-3 pb-3">
           {/* Logo */}
-          <div className="flex justify-start items-center fixed left-4 z-40">
-            <picture className={` flex justify-start pl-10 pb-2  ${colorbg ? "flex" : "hidden"}`}>
-              <img src='/img/jordi-prime-grill-logo.svg' alt="logo-nav" className="w-28" />
+          <div className="flex">
+            <picture className={` flex  ${colorbg ? "flex" : "invisible"}`}>
+              <img src='/img/jordi-prime-grill-logo.svg' alt="logo-nav" className="w-24" />
             </picture>
           </div>
 
