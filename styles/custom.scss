@@ -42,7 +42,8 @@ $bg-hero-section: (
 
 
 .carrusel{
-  background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
+  //background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
+  
   background-size: cover;
   @include a-set($sections-paddings);
 }
