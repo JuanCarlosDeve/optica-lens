@@ -26,7 +26,7 @@ export const videoList = [
     fluid: true,
     poster: "/img/video-poster.jpg",
     sources: [{
-      src: "https://www.youtube.com/embed/1rI8z07U50M",
+      src: "https://into-the-program.com/uploads/sample_video03.mp4",
       type: 'video/mp4'
     }]
   },
@@ -69,20 +69,27 @@ const Carousel = () => {
       <section className="carousel">
         <Swiper
           pagination={true}
-          modules={[Pagination]}
+          navigation={true}
+          modules={[Pagination, Navigation]}
           className="mySwiper"
-          
-        >
-          {videoList.map((video) => (
-            <SwiperSlide className="" key={video.poster}>
-              <div className="myvideo">
-                <VideoJS className="block" options={video} onReady={handlePlayerReady} />
-              </div>
-            </SwiperSlide>
 
-          ))}
+        >
+          <div className="swiper-wrapxper">
+
+            {videoList.map((video) => (
+              <SwiperSlide className="" key={video.poster}>
+                <div className="myvideo">
+                  <VideoJS className="block" options={video} onReady={handlePlayerReady} />
+                </div>
+              </SwiperSlide>
+
+            ))}
+
+            <div className="swiper-button-next"></div>
+            <div className="swiper-button-prev"></div>
+          </div>
         </Swiper>
-        
+
       </section>
     </>
   );
