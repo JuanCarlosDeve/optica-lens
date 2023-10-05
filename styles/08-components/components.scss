@@ -141,3 +141,51 @@ $modal-content-second-img-small: (
   gap: 1.5rem;
   @include a-set($modal-content-second-img-small);
 }
+
+// carrusel 
+
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide .myvideo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(90,90,84,1);
+    opacity: 1;
+    
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: rgba(213,177,108,1);
+  }
+
+
+}

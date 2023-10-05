@@ -2,6 +2,7 @@ import { Container, Col } from "@citrica/objects";
 import Navbar from "@/components/citrica-ui/navbar";
 import ProductsList from "@/components/product-list";
 import Link from "next/link";
+import Carousel from "@/components/citrica-ui/carrusel";
 
 export default function Home() {
 	return (
@@ -121,11 +122,11 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section id="carrusel" className="carrusel">
-				<Container>
-					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="animate-fade-right">
-						<div className="flex flex-col h-screen justify-center gap-14">
-							CARRUSEL
+			<section id="carrusel" className=" bg-black-brand carrusel flex justify-center items-center">
+				<Container className="flex justify-center">
+					<Col cols={{ lg: 6, md: 6, sm: 6 }}>
+						<div className=" flex flex-col h-full">
+						<Carousel/>
 						</div>
 					</Col>
 				</Container>
