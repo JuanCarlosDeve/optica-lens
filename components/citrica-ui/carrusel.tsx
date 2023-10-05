@@ -26,7 +26,7 @@ export const videoList = [
     fluid: true,
     poster: "/img/video-poster.jpg",
     sources: [{
-      src: '{`https://www.youtube.com/watch?v=1rI8z07U50M`}',
+      src: '{`https://firebasestorage.googleapis.com/v0/b/yashifoodpics.appspot.com/o/TEMP%2Fcosta_farms_matera_guindando.mp4?alt=media&token=8453b699-e450-4e11-92ca-cb467caed269`}',
       type: 'video/mp4'
     }]
   },
@@ -38,7 +38,7 @@ export const videoList = [
     fluid: true,
     poster: "/img/stock-photo.jpg",
     sources: [{
-      src: '{`https://www.youtube.com/embed/1rI8z07U50M`}',
+      src: "https://www.youtube.com/embed/1rI8z07U50M",
       type: 'video/mp4'
     }]
   },
