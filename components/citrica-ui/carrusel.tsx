@@ -47,20 +47,34 @@ export const videoList = [
 
 ];
 
+type SwiperButtonProps = {
+  children: React.ReactNode
+}
+
+const SwiperButtonNext = ({ children }: SwiperButtonProps) => {
+  const swiper = useSwiper();
+  return <button onClick={() => swiper.slideNext()}>{children}</button>;
+};
+
+const SwiperButtonPrev = ({ children }: SwiperButtonProps) => {
+  const swiper = useSwiper();
+  return <button onClick={() => swiper.slidePrev()}>{children}</button>;
+};
+
 
 const Carousel = () => {
   //const playerRef = useRef<videojs.Player | null>(null);
   const playerRef = useRef(null);
-  const swiper = useSwiper();
-  
+  // const swiper = useSwiper();
 
-  const handleNextClick = () => {
-    swiper.slideNext();
-  };
 
-  const handlePrevClick = () => {
-    swiper.slidePrev();
-  };
+  // const handleNextClick = () => {
+  //   swiper.slideNext();
+  // };
+
+  // const handlePrevClick = () => {
+  //   swiper.slidePrev();
+  // };
 
 
   const handlePlayerReady = (player: any) => {
@@ -76,7 +90,7 @@ const Carousel = () => {
     });
   };
 
-  
+
 
   return (
     <>
@@ -86,9 +100,35 @@ const Carousel = () => {
             clickable: true,
           }}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
-          
+          className="mySwiper relative"
+
         >
+          <div className="botones-carrusel flex justify-between absolute w-full top-[35%]">
+            <SwiperButtonPrev>
+              <div className="z-50 relative right-[10%]">
+                <picture>
+                  <img
+                    src='/img/icons/vector_left.svg'
+                    alt="next"
+                    className="w-[100px] h-[100px] object-contain cursor-pointer"
+                  />
+                </picture>
+              </div>
+            </SwiperButtonPrev>
+
+            <SwiperButtonNext>
+              <div className="z-50 relative left-[10%]">
+                <picture>
+                  <img
+                    src='/img/icons/vector_right.svg'
+                    alt="next"
+                    className="w-[100px] h-[100px] object-contain cursor-pointer"
+                  />
+                </picture>
+              </div>
+            </SwiperButtonNext>
+
+          </div>
 
 
           {videoList.map((video) => (
@@ -102,35 +142,6 @@ const Carousel = () => {
 
 
         </Swiper>
-
-
-        <div className="botones-carrusel only-lg-nav flex justify-between relative bottom-[50%] ">
-
-          <div className=" z-50 relative right-[10%] ">
-            <picture>
-              <img
-                src='/img/icons/vector_left.svg'
-                alt="next"
-                className="w-[100px] h-[100px] object-contain cursor-pointer"
-                onClick={handlePrevClick}
-
-              />
-            </picture>
-          </div>
-
-          <div className="  z-50 relative left-[10%] ">
-            <picture>
-              <img
-                src='/img/icons/vector_right.svg'
-                alt="next"
-                className="w-[100px] h-[100px] object-contain cursor-pointer"
-                onClick={handleNextClick}
-
-              />
-            </picture>
-          </div>
-
-        </div>
 
 
       </div>
