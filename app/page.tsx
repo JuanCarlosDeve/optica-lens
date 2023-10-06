@@ -124,7 +124,7 @@ export default function Home() {
 			</section>
 			<section id="carrusel" className=" bg-black-brand carrusel flex justify-center items-center w-full">
 				<Container className="flex justify-center">
-					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} noPadding>
 						<div className=" flex flex-col h-full">
 						<Carousel/>
 						</div>
