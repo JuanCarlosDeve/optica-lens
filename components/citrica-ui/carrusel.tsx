@@ -78,7 +78,7 @@ const Carousel = () => {
 
             {videoList.map((video) => (
               <SwiperSlide className="" key={video.poster}>
-                <div className="myvideo">
+                <div className="myvideo video-container">
                   <VideoJS className="block" options={video} onReady={handlePlayerReady} />
                 </div>
               </SwiperSlide>

@@ -75,7 +75,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section id="our-partners" className=" my-28">
+			<section id="our-partners" className="my-28">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
 						<h2 className="headline mb-12 text-gold-brand">Nuestros socios estratégicos</h2>
@@ -124,7 +124,7 @@ export default function Home() {
 			</section>
 			<section id="carrusel" className=" bg-black-brand carrusel flex justify-center items-center">
 				<Container className="flex justify-center">
-					<Col cols={{ lg: 6, md: 6, sm: 6 }}>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<div className=" flex flex-col h-full">
 						<Carousel/>
 						</div>
