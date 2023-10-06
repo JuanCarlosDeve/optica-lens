@@ -204,14 +204,14 @@ const ProductsList = () => {
             url2={product.url2}
           />
           {selectedProduct && (
-        <Modal
-          imageUrl={selectedProduct.url}
-          title={selectedProduct.title}
-          description={selectedProduct.description}
-          url2={selectedProduct.url2}
-          onClose={closeModal}
-        />
-      )}
+            <Modal
+              imageUrl={selectedProduct.url}
+              title={selectedProduct.title}
+              description={selectedProduct.description}
+              url2={selectedProduct.url2}
+              onClose={closeModal}
+            />
+          )}
         </Col>
       ))}
       
