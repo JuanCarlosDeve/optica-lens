@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from "react";
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useSwiper } from 'swiper/react';
 
 // Import VideoJS styles
 import "video.js/dist/video-js.css";
@@ -50,6 +51,17 @@ export const videoList = [
 const Carousel = () => {
   //const playerRef = useRef<videojs.Player | null>(null);
   const playerRef = useRef(null);
+  const swiper = useSwiper();
+  
+
+  const handleNextClick = () => {
+    swiper.slideNext();
+  };
+
+  const handlePrevClick = () => {
+    swiper.slidePrev();
+  };
+
 
   const handlePlayerReady = (player: any) => {
     playerRef.current = player;
@@ -64,33 +76,64 @@ const Carousel = () => {
     });
   };
 
+  
+
   return (
     <>
-      <section className="carousel">
+      <div className="carousel">
         <Swiper
-          pagination={true}
-          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
           modules={[Pagination, Navigation]}
           className="mySwiper"
-
+          
         >
-          <div className="swiper-wrapxper">
 
-            {videoList.map((video) => (
-              <SwiperSlide className="" key={video.poster}>
-                <div className="myvideo video-container">
-                  <VideoJS className="block" options={video} onReady={handlePlayerReady} />
-                </div>
-              </SwiperSlide>
 
-            ))}
+          {videoList.map((video) => (
+            <SwiperSlide className="" key={video.poster}>
+              <div className="myvideo video-container">
+                <VideoJS className="block" options={video} onReady={handlePlayerReady} />
+              </div>
+            </SwiperSlide>
 
-            <div className="swiper-button-next"></div>
-            <div className="swiper-button-prev"></div>
-          </div>
+          ))}
+
+
         </Swiper>
 
-      </section>
+
+        <div className="botones-carrusel only-lg-nav flex justify-between relative bottom-[50%] ">
+
+          <div className=" z-50 relative right-[10%] ">
+            <picture>
+              <img
+                src='/img/icons/vector_left.svg'
+                alt="next"
+                className="w-[100px] h-[100px] object-contain cursor-pointer"
+                onClick={handlePrevClick}
+
+              />
+            </picture>
+          </div>
+
+          <div className="  z-50 relative left-[10%] ">
+            <picture>
+              <img
+                src='/img/icons/vector_right.svg'
+                alt="next"
+                className="w-[100px] h-[100px] object-contain cursor-pointer"
+                onClick={handleNextClick}
+
+              />
+            </picture>
+          </div>
+
+        </div>
+
+
+      </div>
     </>
   );
 };
