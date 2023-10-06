@@ -186,12 +186,13 @@ $modal-content-second-img-small: (
   .swiper-pagination-bullet-active {
     background-color: rgba(213,177,108,1);
   }
-
-  .swiper-button-next, .swiper-button-prev{
-    color: rgba(213,177,108,1);
-  
-    
-    
+  .swiper-pagination{
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    bottom: -1% !important;
   }
 
 }

@@ -103,7 +103,7 @@ const Carousel = () => {
           className="mySwiper relative"
 
         >
-          <div className="botones-carrusel flex justify-between absolute w-full top-[35%]">
+          <div className="botones-carrusel only-lg-nav flex justify-between absolute w-full top-[35%]">
             <SwiperButtonPrev>
               <div className="z-50 relative right-[10%]">
                 <picture>
