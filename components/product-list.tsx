@@ -1,6 +1,5 @@
 "use client";
 
-
 import { Container, Col } from "@citrica/objects";
 import Card from "@/components/citrica-ui/card";
 import { useState } from "react";
@@ -170,16 +169,6 @@ export const productImg = [
 
 const ProductsList = () => {
 
-  const [selectedProduct, setSelectedProduct] = useState<any | null>(null);
-
-  const openModal = (product: any) => {
-    setSelectedProduct(product);
-  };
-
-  const closeModal = () => {
-    setSelectedProduct(null);
-  };
-
   return (
     <Container>
       <Col cols={{ lg: 12, md: 6, sm: 4 }}>
@@ -203,15 +192,6 @@ const ProductsList = () => {
             description={`Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed.`}
             url2={product.url2}
           />
-          {selectedProduct && (
-            <Modal
-              imageUrl={selectedProduct.url}
-              title={selectedProduct.title}
-              description={selectedProduct.description}
-              url2={selectedProduct.url2}
-              onClose={closeModal}
-            />
-          )}
         </Col>
       ))}
       

@@ -112,7 +112,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <ul className="only-lg-nav list-none gap-14">
+          <ul className="only-lg-flex list-none gap-14">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}

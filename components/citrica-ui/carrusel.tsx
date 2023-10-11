@@ -47,6 +47,7 @@ export const videoList = [
 
 ];
 
+// button next-prev 
 type SwiperButtonProps = {
   children: React.ReactNode
 }
@@ -62,21 +63,13 @@ const SwiperButtonPrev = ({ children }: SwiperButtonProps) => {
 };
 
 
+
+
+
 const Carousel = () => {
-  //const playerRef = useRef<videojs.Player | null>(null);
+ 
   const playerRef = useRef(null);
-  // const swiper = useSwiper();
-
-
-  // const handleNextClick = () => {
-  //   swiper.slideNext();
-  // };
-
-  // const handlePrevClick = () => {
-  //   swiper.slidePrev();
-  // };
-
-
+  
   const handlePlayerReady = (player: any) => {
     playerRef.current = player;
 
@@ -94,16 +87,16 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="carousel">
+      <div className="carousel ">
         <Swiper
           pagination={{
             clickable: true,
           }}
           modules={[Pagination, Navigation]}
-          className="mySwiper relative"
+          className="mySwiper relative "
 
         >
-          <div className="botones-carrusel only-lg-nav flex justify-between absolute w-full top-[35%]">
+          <div className="botones-carrusel only-lg-flex flex justify-between absolute w-full top-[40%]">
             <SwiperButtonPrev>
               <div className="z-50 relative right-[10%]">
                 <picture>
@@ -132,8 +125,8 @@ const Carousel = () => {
 
 
           {videoList.map((video) => (
-            <SwiperSlide className="" key={video.poster}>
-              <div className="myvideo video-container">
+            <SwiperSlide className="pb-[5%] " key={video.poster}>
+              <div className="myvideo video-container mr-[7%] ml-[7%]">
                 <VideoJS className="block" options={video} onReady={handlePlayerReady} />
               </div>
             </SwiperSlide>
