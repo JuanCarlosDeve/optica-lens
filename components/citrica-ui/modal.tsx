@@ -16,6 +16,7 @@ const Modal = ({ imageUrl, title, description, url2, onClose }: ModalProps) => {
 
   const modalContentRef = useRef<HTMLDivElement | null>(null);
 
+  
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (modalContentRef.current && !modalContentRef.current.contains(e.target as Node)) {

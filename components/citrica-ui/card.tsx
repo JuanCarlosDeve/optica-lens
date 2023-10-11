@@ -26,6 +26,7 @@ const Card = ({ imageUrl, title, description, btnLabel, btnAction, url2 }: CardP
 
 
   return (
+    <>
     <Link href={""} onClick={openModal} scroll={false} className="flex flex-col bg-[rgba(255,255,255,1)] p-6 mb-8 card-container">
       {imageUrl && (
         <picture  className="flex justify-center">
@@ -44,6 +45,7 @@ const Card = ({ imageUrl, title, description, btnLabel, btnAction, url2 }: CardP
         </div>
       )} */}
 
+    </Link>
       {isModalOpen && (
         <Modal
           imageUrl={imageUrl}
@@ -53,9 +55,7 @@ const Card = ({ imageUrl, title, description, btnLabel, btnAction, url2 }: CardP
           onClose={closeModal}
         />
       )}
-
-
-    </Link>
+</>
   )
 }
 
