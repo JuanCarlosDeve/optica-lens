@@ -31,7 +31,7 @@ $bg-hero-section: (
 
 .hero-section{
   @include a-set($bg-hero-section);
-  @include a-set($sections-paddings);
+  // @include a-set($sections-paddings);
 }
 
 // .hero-section-sm{
@@ -42,7 +42,8 @@ $bg-hero-section: (
 
 
 .carrusel{
-  background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
+  //background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
+  
   background-size: cover;
   @include a-set($sections-paddings);
 }
@@ -70,11 +71,12 @@ section[id]{
     background-repeat: no-repeat;
     background-size: 0% 3px;
     transition: background-size .4s;
+    &:hover{
+      background-size: 100% 3px;
+    }
 }
 
-.nav_link:hover{  
-    background-size: 100% 3px;
-}
+
 
 .nav_link_active{
   text-decoration: none;
