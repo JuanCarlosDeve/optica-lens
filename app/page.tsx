@@ -11,9 +11,9 @@ export default function Home() {
 			<section id="hero-section" className="hero-section">
 				<Container>
 					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="">
-						<div className="flex flex-col h-screen justify-end gap-14 sm:justify-center">
+						<div className="flex flex-col h-screen justify-end gap-14 sm:justify-center pb-12">
 							<picture>
-								<img className="w-[240px] h-[124px]" src={'/img/jordi-prime-grill-logo.svg'} alt='logo' />
+								<img className="logo-prime-grill" src={'/img/jordi-prime-grill-logo.svg'} alt='logo' />
 							</picture>
 							<h2 className="display text-gold-brand">
 								Importación, distribución <br />y procesamiento de carnes angus americana y uruguaya
@@ -22,7 +22,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section id="our-products" className="our-products">
+			<section id="our-products" className="our-products pb-32">
 				<ProductsList />
 			</section>
 			<section id="parrilla" className="parrilla">
