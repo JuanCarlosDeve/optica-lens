@@ -226,9 +226,6 @@ const ProductsList = () => {
   const [currentCategory, setCurrentCategory] = useState('*') // set initial Cateory *,1,2,3
 
   const handleChangeCategory = (id:string) => {
-    console.log('CAMBIO A ', parseInt(id))
-    // const filtredProducts = products.filter( item => item.category_id === parseInt(id) )
-    // console.log(filtredProducts);
     if(currentCategory === '*'){
       setProducts(allProducts)
     } else {
