@@ -39,7 +39,7 @@ const Modal = ({ imageUrl, title, description, url2, onClose }: ModalProps) => {
       </button>
 
       <div className="modal-content p-16 gap-10 box-border" ref={modalContentRef}>
-        <Container>
+        <Container noPadding>
           <Col cols={{lg:6, md:3, sm:4}}>
             {imageUrl && (
               <div className="flex flex-1 ">
