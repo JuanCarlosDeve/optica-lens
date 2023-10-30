@@ -61,7 +61,7 @@ $modal-content: (
 );
 
 .modal-content {
-  max-width: 100%;
+  max-width: $container__width;
   padding:30px 4px;
   @include a-set($modal-content);
   
