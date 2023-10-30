@@ -109,3 +109,23 @@ $logo-prime-grill: (
   height: 124px;
   @include a-set($logo-prime-grill);
 }
+
+.parrilla{
+  background: url("/img/mi-parrilla-bkg-lg.jpg");
+
+}
+
+.bottom-parrila{
+  display: flex;
+  justify-content: center;
+  background: #D5B16C;
+  color: var(--global-brand-black, #1D1D1B);
+  border-radius: .25rem;
+  border-color: transparent;
+  border-width: 2px;
+  align-items: center;
+  &:hover{
+    background:#A38243;
+  }
+
+}
