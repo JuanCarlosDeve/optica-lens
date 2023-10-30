@@ -196,15 +196,28 @@ const allProducts = [
 const categories = [
   {
     value: 1,
-    label: "Corte americano"
+    label: "Cerdo americano"
   },
   {
     value: 2,
-    label: "Cerdo americano"
-  }, {
+    label: "Cortes americanos"
+  }, 
+  {
     value: 3,
-    label: "Derivados y otros"
+    label: "Cortes angus"
   },
+  {
+    value: 4,
+    label: "Cortes sur meat"
+  },
+  {
+    value: 5,
+    label: "Derivados carnicos, otros"
+  }, 
+  {
+    value: 6,
+    label: "Generales"
+  }
 ]
 
 
