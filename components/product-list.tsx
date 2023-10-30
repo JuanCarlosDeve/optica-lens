@@ -2,166 +2,193 @@
 
 import { Container, Col } from "@citrica/objects";
 import Card from "@/components/citrica-ui/card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./citrica-ui/modal";
 import {Select, SelectItem} from "@nextui-org/react";
 
-export const productImg = [
+
+const allProducts = [
   {
     title: "Costilla st louis",
     url: "/img/cerdo-americano--costilla-st-louis-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--costillar-y-costilla-st-louis-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Costillar",
     url: "/img/cerdo-americano--costillar-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--costillar-y-costilla-st-louis-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Solomillo",
     url: "/img/cerdo-americano--solomillo-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--solomillo-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Asado de Tira 3h",
     url: "/img/cortes-americanos--asado-de-tira-3h-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--asado-de-tira-800px.jpg",
+    category_id: 2,
   },
   {
     title: "Asado de Tira 4h",
     url: "/img/cortes-americanos--asado-de-tira-4h-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--asado-de-tira-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Asado de Tira sin h",
     url: "/img/cortes-americanos--asado-de-tira-sin-h-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--asado-de-tira-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Bife Ancho",
     url: "/img/cortes-americanos--bife-ancho-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--bife-ancho-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Bife-Angosto",
     url: "/img/cortes-americanos--bife-angosto-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--bife-angosto-lomo-fino-tbone-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Brisket",
     url: "/img/cortes-americanos--brisket-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--brisket-800px.jpg",
+    category_id: 2,
   },
   {
     title: "Cocktail Ribs",
     url: "/img/cortes-americanos--cocktail-ribs-800px.jpg",
     description: "",
     url2: "",
+    category_id: 2,
   },
   {
     title: "Colita de Cuadril",
     url: "/img/cortes-americanos--colita-de-cuadril-800px.jpg",
     description: "",
     url2: "",
+    category_id: 2,
   },
   {
     title: "Cowboy",
     url: "/img/cortes-americanos--cowboy-800px.jpg",
     description: "",
     url2: "",
+    category_id: 2,
   },
   {
     title: "Entraña Fina",
     url: "/img/cortes-americanos--entraña-fina-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--entrana-flank-steak-800px.jpg",
+    category_id: 2,
   },
   {
     title: "Entrana Gruesa",
     url: "/img/cortes-americanos--entrana-gruesa-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--entrana-flank-steak-800px.jpg",
+    category_id: 2,
   },
   {
     title: "Frank Steak",
     url: "/img/cortes-americanos--frank-steak-800px.jpg",
     description: "",
     url2: "public/img/cortes-angus--entrana-flank-steak-800px.jpg",
+    category_id: 2,
   },
   {
     title: "Picanha",
     url: "/img/cortes-americanos--picanha-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--picanha-colita-de-cuadril-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Tbone",
     url: "/img/cortes-americanos--tbone-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--bife-angosto-lomo-fino-tbone-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Tomahawk",
     url: "/img/cortes-americanos--tomahawk-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--tomahawk-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Bife Ancho Sur Meat",
     url: "/img/cortes-sur-meat--bife-ancho-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--bife-ancho-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Bife Angosto Sur Meat",
     url: "/img/cortes-sur-meat--bife-angosto-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--bife-angosto-lomo-fino-tbone-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Colita de Cuadril Sur Meat",
     url: "/img/cortes-sur-meat--colita-de-cuadril-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--picanha-colita-de-cuadril-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Lomo Fino Sur Meat",
     url: "/img/cortes-sur-meat--lomo-fino-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--bife-angosto-lomo-fino-tbone-800px.jpg",
+    category_id: 1,
   },
   {
     title: "Medallon de Lomo Sur Meat",
     url: "/img/cortes-sur-meat--medallon-de-lomo-800px.jpg",
     description: "",
     url2: "",
+    category_id: 2,
   },
   {
     title: "Picanha Sur Meat",
     url: "/img/cortes-sur-meat--picanha-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--picanha-colita-de-cuadril-800px.jpg",
+    category_id: 3,
   },
   {
     title: "Cerdo Chuleta Sur Meat",
     url: "/img/cortes-sur-meat-cerdo--chuleta-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--chuleta-800px.jpg",
+    category_id: 3,
   },
   {
     title: "Cerdo Panceta con Piel Sur Meat",
     url: "/img/cortes-sur-meat-cerdo--panceta-con-piel-800px.jpg",
     description: "",
     url2: "/img/cortes-angus--panceta-800px.jpg",
+    category_id: 3,
   },
 
 ];
@@ -195,6 +222,23 @@ const categories = [
 
 
 const ProductsList = () => {
+  const [ products, setProducts ] = useState(allProducts)
+  const [currentCategory, setCurrentCategory] = useState('*') // set initial Cateory *,1,2,3
+
+  const handleChangeCategory = (id:string) => {
+    console.log('CAMBIO A ', parseInt(id))
+    // const filtredProducts = products.filter( item => item.category_id === parseInt(id) )
+    // console.log(filtredProducts);
+    if(currentCategory === '*'){
+      setProducts(allProducts)
+    } else {
+      setProducts(allProducts.filter( item => item.category_id === parseInt(id) ))
+    }
+  }
+
+  useEffect(()=>{
+    handleChangeCategory(currentCategory)
+  },[currentCategory])
 
   return (
     <Container>
@@ -215,6 +259,7 @@ const ProductsList = () => {
         <Select
           label="Seleccione categoría"
           className="max-w-xs"
+          onChange={e => setCurrentCategory(e.target.value) }
         >
           {categories.map((category) => (
             <SelectItem key={category.value} value={category.value}>
@@ -223,7 +268,7 @@ const ProductsList = () => {
           ))}
         </Select>
       </Col>
-      {productImg.map((product) => (
+      {products.map((product) => (
         <Col key={product.title} className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
           <Card
             imageUrl={product.url}
