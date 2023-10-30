@@ -30,20 +30,18 @@ export default function Home() {
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center mb-14">
 						<div className=" flex mt-16 mb-14 flex-col-reverse justify-center items-center">
 							<picture>
-								<img src={'/img/mi-parrilla.svg'} alt="" />
+								<img src={'/img/mi-parrilla.png'} alt="" />
 							</picture>
 						</div>
 						<Container>
 							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="mb-[32px]" >
-								<h2 className="flex items-center mb-11 justify-start headline text-gold-brand">
-									Lorem ipsum
+								<h2 className="flex items-center justify-center title text-gold-brand">
+								Expertos en productos premium para tu parrilla
 								</h2>
-								<p className="flex text-left copy py-5">
-									Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean.
-								</p>
+								<p className="flex justify-center copy text-white font-medium py-5">Tips parrilleros, recetas, y mucho más.</p>
 							</Col>
-							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex justify-end" >
-								<Link className=" flex justify-center bg-black-brand text-gold-lightest label items-center  border-2 rounded-md w-[179px] h-[40px]" href='Ver-todos'>
+							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex justify-center" >
+								<Link className=" bottom-parrila label w-[179px] h-[40px]" href='https://www.miparrilla.com/' target="_blank">
 									Visitar
 								</Link>
 							</Col>

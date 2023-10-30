@@ -261,7 +261,55 @@ const allProducts = [
     url2: "",
     category_id: 6,
   },
-
+  {
+    title: "Marinados BBQ Ahumado",
+    url: "/img/marinados--bbq-ahumado.jpg",
+    description: "",
+    url2: "",
+    category_id: 6,
+  },
+  {
+    title: "Marinados BBQ",
+    url: "/img/marinados--bbq.jpg",
+    description: "",
+    url2: "",
+    category_id: 6,
+  },
+  {
+    title: "Marinados Buffalo",
+    url: "/img/marinados--buffalo.jpg",
+    description: "",
+    url2: "",
+    category_id: 6,
+  },
+  {
+    title: "Marinados Lemon Pepper",
+    url: "/img/marinados--lemon-pepper.jpg",
+    description: "",
+    url2: "",
+    category_id: 6,
+  },
+  {
+    title: "Marinados Oriental Dulce",
+    url: "/img/marinados--oriental-dulce.jpg",
+    description: "",
+    url2: "",
+    category_id: 6,
+  },
+  {
+    title: "Marinados Oriental Salado",
+    url: "/img/marinados--oriental-salado.jpg",
+    description: "",
+    url2: "",
+    category_id: 6,
+  },
+  {
+    title: "Marinados Pimienta",
+    url: "/img/marinados--pimientas.jpg",
+    description: "",
+    url2: "",
+    category_id: 6,
+  },
 
 
 ];
