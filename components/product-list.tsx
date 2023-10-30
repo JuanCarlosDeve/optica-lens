@@ -268,6 +268,10 @@ const allProducts = [
 
 const categories = [
   {
+    value: 0,
+    label: "Todos"
+  },
+  {
     value: 1,
     label: "Cerdo americano"
   },
@@ -296,10 +300,10 @@ const categories = [
 
 const ProductsList = () => {
   const [ products, setProducts ] = useState(allProducts)
-  const [currentCategory, setCurrentCategory] = useState('*') // set initial Cateory *,1,2,3
+  const [currentCategory, setCurrentCategory] = useState('0') // set initial Cateory 0,1,2,3
 
   const handleChangeCategory = (id:string) => {
-    if(currentCategory === '*'){
+    if(currentCategory === '0'){
       setProducts(allProducts)
     } else {
       setProducts(allProducts.filter( item => item.category_id === parseInt(id) ))
@@ -331,12 +335,13 @@ const ProductsList = () => {
           className="max-w-xs"
           onChange={e => setCurrentCategory(e.target.value) }
         >
-          {categories.map((category) => (
-            <SelectItem key={category.value} value={category.value}>
-              {category.label}
-            </SelectItem>
-          ))}
+            {categories.map((category) => (
+              <SelectItem key={category.value} value={category.value}>
+                {category.label}
+              </SelectItem>
+            ))}
         </Select>
+        
       </Col>
       {products.map((product) => (
         <Col key={product.title} className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
