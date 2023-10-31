@@ -61,8 +61,8 @@ $modal-content: (
 );
 
 .modal-content {
-  max-width: 100%;
-  padding:30px 20px;
+  max-width: $container__width;
+  padding:30px 4px;
   @include a-set($modal-content);
   
 }
@@ -175,12 +175,35 @@ $modal-content-second-img-small: (
     object-fit: cover;
   }
 
-  .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    background-color: rgba(90,90,84,1);
-    opacity: 1;
+  .swiper-pagination {
+    position: relative;
+    bottom: 10% !important;
     
+  }
+  
+  $swiper-pagination-bullet: (
+  sm: (
+    width: 10px,
+    height: 10px,
+    background-color: rgba(90,90,84,1),
+    opacity: 1,
+  ),
+  md: (
+    width: 15px,
+    height: 15px,
+    background-color: rgba(90,90,84,1),
+    opacity: 1,
+  ),
+  lg: (
+    width: 15px,
+    height: 15px,
+    background-color: rgba(90,90,84,1),
+    opacity: 1,
+  )
+);
+
+  .swiper-pagination-bullet {
+    @include a-set($swiper-pagination-bullet);
   }
 
   .swiper-pagination-bullet-active {

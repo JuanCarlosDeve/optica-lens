@@ -34,12 +34,9 @@ $bg-hero-section: (
   // @include a-set($sections-paddings);
 }
 
-// .hero-section-sm{
-//   background: url ('../public/img/stock-photo-sm.jpg') #1D1D1B no-repeat center;
-//   background-size: cover;
-  
-// }
-
+.category-selector{
+  padding-bottom: 40px;
+}
 
 .carrusel{
   //background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
@@ -87,3 +84,48 @@ section[id]{
   transition: background-size .4s;
 }
 
+
+$logo-prime-grill: (
+  sm: (
+    width: 150px,
+    height: 80px,
+
+  ),
+  md: (
+    width: 240px,
+    height: 124px,
+
+  ),
+  lg: (
+    width: 240px,
+    height: 124px,
+  )
+);
+
+
+.logo-prime-grill{
+
+  width: 240px;
+  height: 124px;
+  @include a-set($logo-prime-grill);
+}
+
+.parrilla{
+  background: url("/img/mi-parrilla-bkg-lg.jpg");
+
+}
+
+.bottom-parrila{
+  display: flex;
+  justify-content: center;
+  background: #D5B16C;
+  color: var(--global-brand-black, #1D1D1B);
+  border-radius: .25rem;
+  border-color: transparent;
+  border-width: 2px;
+  align-items: center;
+  &:hover{
+    background:#A38243;
+  }
+
+}
