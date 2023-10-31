@@ -5,7 +5,7 @@ import 'video.js/dist/video-js.css';
 export const VideoJS = (props) => {
   const videoRef = React.useRef(null);
   const playerRef = React.useRef(null);
-  const {options, onReady} = props;
+  const {options, onReady, isPaused} = props;
 
   React.useEffect(() => {
 
@@ -29,8 +29,13 @@ export const VideoJS = (props) => {
 
       player.autoplay(options.autoplay);
       player.src(options.sources);
+      if (isPaused) {
+        player.pause();
+      }  
     }
-  }, [options, videoRef]);
+
+
+  }, [options, videoRef, isPaused]);
 
   // Dispose the Video.js player when the functional component unmounts
   React.useEffect(() => {
