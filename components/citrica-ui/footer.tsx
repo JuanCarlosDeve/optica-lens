@@ -64,7 +64,7 @@ const FooterCUI = () => {
                 </a>
               </div>
               <span className="flex flex-wrap-reverse justify-end label text-gray-brand">
-              Optic Lent's - 2024 © Copyrights.
+              Optic Lent&apos;s - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center flex-wrap label text-gray-brand ">
                 All rights reserved.
@@ -91,7 +91,7 @@ const FooterCUI = () => {
                 </a>
               </div>
               <span className="flex flex-wrap-reverse label justify-end text-gray-brand">
-              Optic Lent's - 2024 © Copyrights.
+              Optic Lent&apos;s - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center label flex-wrap text-gray-brand ">
                 All rights reserved.

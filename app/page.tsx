@@ -18,7 +18,7 @@ export default function Home() {
 								<img className="logo-prime-grill " src={'/img/ojohorus.png'} alt='logo' />
 							</picture>
 							<h2 className="display text-gold-brand">
-								Opti Lent's
+								Opti Lent&apos;s
 							</h2>
 						</div>
 					</Col>
