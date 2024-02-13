@@ -105,11 +105,11 @@ const Navbar = () => {
   return (
     <nav className={`btn w-screen fixed box-border z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)]" : "bg-[rgba(0,0,0,0.651)]"}`}>
       <Container>
-        <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-16 flex justify-between items-center pt-3 pb-3">
+        <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-20 flex justify-between items-center pt-3 pb-3">
           {/* Logo */}
           <div className="flex">
             <picture className={` flex  ${colorbg ? "flex" : "invisible"}`}>
-              <img src='/img/jordi-prime-grill-logo.svg' alt="logo-nav" className="w-24" />
+              <img src='/img/ojohorus.png' alt="logo-nav" className="w-24" />
             </picture>
           </div>
 

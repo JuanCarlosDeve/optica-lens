@@ -16,7 +16,7 @@ export default function Home() {
 								<img className="logo-prime-grill" src={'/img/ojohorus.png'} alt='logo' />
 							</picture>
 							<h2 className="display text-gold-brand">
-								Optica Lents
+								Optica Lets
 							</h2>
 						</div>
 					</Col>
