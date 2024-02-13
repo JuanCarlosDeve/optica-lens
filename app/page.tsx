@@ -12,8 +12,8 @@ export default function Home() {
 			<section id="hero-section" className="hero-section">
 				<Container>
 					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="">
-						<div className="flex flex-col h-screen justify-center gap-14 sm:justify-center pb-20">
-							<picture className=""> 
+						<div className="flex flex-col h-screen justify-center gap-4 pb-10">
+							<picture className=" flex relative bottom-20 "> 
 							{/* ojo    */}
 								<img className="logo-prime-grill " src={'/img/ojohorus.png'} alt='logo' />
 							</picture>
