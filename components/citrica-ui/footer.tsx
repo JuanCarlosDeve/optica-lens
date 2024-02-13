@@ -23,9 +23,11 @@ const FooterCUI = () => {
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="center mb-10">
             <div className='flex justify-center items-center' >
-              <picture>
-                <img className='center  h-[64px] ' src="/img/ojohorus.png" alt="jordi logo" />
-              </picture>
+              <Link href="#hero-section">
+                <picture>
+                  <img className='center  h-[64px] ' src="/img/ojohorus.png" alt="jordi logo" />
+                </picture>
+              </Link>
             </div>
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3 not-lg">
@@ -64,7 +66,7 @@ const FooterCUI = () => {
                 </a>
               </div>
               <span className="flex flex-wrap-reverse justify-end label text-gray-brand">
-              Optic Lent&apos;s - 2024 © Copyrights.
+                Optic Lent&apos;s - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center flex-wrap label text-gray-brand ">
                 All rights reserved.
@@ -91,7 +93,7 @@ const FooterCUI = () => {
                 </a>
               </div>
               <span className="flex flex-wrap-reverse label justify-end text-gray-brand">
-              Optic Lent&apos;s - 2024 © Copyrights.
+                Optic Lent&apos;s - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center label flex-wrap text-gray-brand ">
                 All rights reserved.

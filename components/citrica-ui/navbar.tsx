@@ -20,8 +20,8 @@ export const navLinks = [
     id: "our-products",
     title: "Productos",
   },
- 
-  
+
+
   {
     id: "contact-section",
     title: "Contactanos",
@@ -108,9 +108,11 @@ const Navbar = () => {
         <Col cols={{ lg: 12, md: 6, sm: 4 }} className="h-20 flex justify-between items-center pt-3 pb-3">
           {/* Logo */}
           <div className="flex">
-            <picture className={` flex  ${colorbg ? "flex" : "invisible"}`}>
-              <img src='/img/ojohorus.png' alt="logo-nav" className="w-24" />
-            </picture>
+            <Link href="#hero-section">
+              <picture className={` flex  ${colorbg ? "flex" : "invisible"}`}>
+                <img src='/img/ojohorus.png' alt="logo-nav" className="w-24" />
+              </picture>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -140,7 +142,7 @@ const Navbar = () => {
             </picture>
 
             {/* Sidebar */}
-            <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-20 bg-black-brand mx-4 my-2 min-w-[140px] rounded-xl z-50 `}>
+            <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-20 right-0 mr-1 mt-1 bg-black-brand  min-w-[140px] rounded-xl z-50 `}>
               <ul className="list-none flex justify-end items-start flex-1 flex-col">
                 {navLinks.map((nav, index) => (
                   <li
