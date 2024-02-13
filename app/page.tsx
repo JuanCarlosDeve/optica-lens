@@ -12,8 +12,9 @@ export default function Home() {
 				<Container>
 					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="">
 						<div className="flex flex-col h-screen justify-center gap-14 sm:justify-center pb-20">
-							<picture>
-								<img className="logo-prime-grill" src={'/img/ojohorus.png'} alt='logo' />
+							<picture className=""> 
+							{/* ojo    */}
+								<img className="logo-prime-grill " src={'/img/ojohorus.png'} alt='logo' />
 							</picture>
 							<h2 className="display text-gold-brand">
 								Optica Lets
@@ -101,7 +102,7 @@ export default function Home() {
 				</Container>
 			</section>
 			<section>
-				<Container>
+				<Container noPadding>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="bg-black-brand only-md">
 						<div className="h-[219px] flex flex-col justify-center">
 							<h2 className="headline ml-[30px] text-gold-brand">Contactanos</h2>
@@ -160,9 +161,9 @@ export default function Home() {
 				</Container>
 			</section>
 			<section id="sedes" className="boutiques">
-				<Container>
+				<Container >
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center ">
-						<h2 className="headline  mt-28 text-gold-brand">BOUTIQUES</h2>
+						<h2 className="headline  mt-28 text-gold-brand">SEDES</h2>
 					</Col>
 				</Container>
 				<Container className="flex justify-between ">

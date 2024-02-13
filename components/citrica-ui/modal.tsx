@@ -58,10 +58,7 @@ const Modal = ({ imageUrl, title, description, url2, onClose }: ModalProps) => {
                 )}
               </div>
               <div className="modal-content-second-img">
-                <picture className="modal-content-second-img-small">
-                  <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
-                  <img className="" src="/img/icons/angus-golden-beef.svg" alt="" />
-                </picture>
+               
                 {url2 && (
                   <picture className="flex-[2]">
                     <img src={url2} alt="" />
