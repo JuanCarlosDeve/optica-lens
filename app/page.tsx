@@ -178,7 +178,7 @@ export default function Home() {
 				<Container className="flex justify-between ">
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center">
 						<div className="pt-10">
-							<Link href='https://maps.app.goo.gl/cRJHczsoUHdU4rCo9' target="_blank"> 
+							<Link href="https://maps.app.goo.gl/cRJHczsoUHdU4rCo9" target="_blank"> 
 							<picture className="hover:cursor-pointer">
 								<img src="/img/icons/location_on.svg" alt="" />
 							</picture>

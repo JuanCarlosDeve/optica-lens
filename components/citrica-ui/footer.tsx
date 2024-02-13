@@ -57,7 +57,7 @@ const FooterCUI = () => {
                     <img className="h-8" src="img/icons/Instagram.svg" alt="inde icon" />
                   </picture>
                 </Link>
-                <Link href='https://facebook.com/optilents.com' target="_blank">
+                <Link href="https://facebook.com/optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/face.svg" alt="face icon" />
                   </picture>
@@ -84,7 +84,7 @@ const FooterCUI = () => {
                     <img className="h-8" src="img/icons/Instagram.svg" alt="inde icon" />
                   </picture>
                 </Link>
-                <Link href='https://facebook.com/optilents.com' target="_blank">
+                <Link href="https://facebook.com/optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/face.svg" alt="face icon" />
                   </picture>
