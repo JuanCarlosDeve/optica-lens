@@ -9,28 +9,30 @@ export const navLinks = [
     title: "Top",
   },
   {
+    id: "historia",
+    title: "Nuestra Historia",
+  },
+  {
+    id: "mision-vision",
+    title: "Mision-Vision",
+  },
+  {
     id: "our-products",
     title: "Productos",
   },
+ 
+  
   {
-    id: "parrilla",
-    title: "Mi Parrilla",
-  },
-  {
-    id: "delivery",
-    title: "Jordi Delivery",
-  },
-  {
-    id: "our-partners",
-    title: "Socios",
+    id: "contact-section",
+    title: "Contactanos",
   },
   {
     id: "carrusel",
     title: "Videos",
   },
   {
-    id: "boutiques",
-    title: "Boutiques",
+    id: "sedes",
+    title: "Sedes",
   },
 ];
 
@@ -116,7 +118,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`flex text-[#D5B16C] cursor-pointer nav_link ${active === nav.id ? "nav_link_active" : "text-[#D5B16C]"}`}
+                className={`flex text-[rgb(135,206,250)] cursor-pointer nav_link ${active === nav.id ? "nav_link_active" : "text-[rgb(135,206,250)]"}`}
                 onClick={() => setActive(nav.id)}
               >
                 <Link className=" pb-1 " href={`#${nav.id}`} prefetch={true}>

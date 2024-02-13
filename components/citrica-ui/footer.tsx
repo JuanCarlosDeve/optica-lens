@@ -11,7 +11,7 @@ const FooterCUI = () => {
                 <picture className="">
                   <img src={'/img/icons/mail.svg'} alt="mail logo" />
                 </picture>
-                info@jordiprimegrill.com
+                opticalets@gmail.com
               </div>
               <div className="flex gap-4 body text-gray-brand ">
                 <picture>
@@ -24,7 +24,7 @@ const FooterCUI = () => {
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="center mb-10">
             <div className='flex justify-center items-center' >
               <picture>
-                <img className='center w-[150px] h-[64px] ' src="img/jordi-prime-grill-logo.svg" alt="jordi logo" />
+                <img className='center  h-[64px] ' src="/img/ojohorus.png" alt="jordi logo" />
               </picture>
             </div>
           </Col>
@@ -34,7 +34,7 @@ const FooterCUI = () => {
                 <picture>
                   <img src={'/img/icons/mail.svg'} alt="mail logo" />
                 </picture>
-                info@corporacionjordi.com
+                opticalets@gmail.com
               </div>
               <div className="flex gap-4 body text-gray-brand ">
                 <picture>
@@ -64,7 +64,7 @@ const FooterCUI = () => {
                 </Link>
               </div>
               <span className="flex flex-wrap-reverse justify-end label text-gray-brand">
-              Jordi Prime Grill - 2023 © Copyrights.
+              Optica Lets - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center flex-wrap label text-gray-brand ">
                 All rights reserved.
@@ -91,7 +91,7 @@ const FooterCUI = () => {
                 </Link>
               </div>
               <span className="flex flex-wrap-reverse label justify-end text-gray-brand">
-                Jordi Prime Grill - 2023 © Copyrights.
+              Optica Lets - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center label flex-wrap text-gray-brand ">
                 All rights reserved.

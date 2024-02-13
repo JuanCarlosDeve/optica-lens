@@ -30,7 +30,7 @@ const Card = ({ imageUrl, title, description, btnLabel, btnAction, url2 }: CardP
     <Link href={""} onClick={openModal} scroll={false} className="flex flex-col bg-[rgba(255,255,255,1)] p-6 mb-8 card-container">
       {imageUrl && (
         <picture  className="flex justify-center">
-          <img  className="rounded-lg" src={imageUrl} alt="" />
+          <img  className="rounded-lg h-[200px] " src={imageUrl} alt="" />
         </picture>
       )}
       {title && (

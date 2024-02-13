@@ -18,33 +18,33 @@ import "swiper/css/scrollbar";
 import VideoJS from './video.jsx'
 import videojs from 'video.js';
 
-export const videoList = [
+interface YouTubeVideoProps {
+  videoId: string;
+}
+
+const YouTubeVideo: React.FC<YouTubeVideoProps> = ({ videoId }) => {
+  return (
+    <div className="video-container flex justify-center">
+      <iframe
+        width="560"
+        height="315"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+const videoList = [
   {
-    autoplay: false,
-    controls: true,
-    responsive: true,
-    loop: false,
-    fluid: true,
-    poster: "/img/video-poster.jpg",
-    playbackRates: [0.5, 1, 1.25, 1.5, 2],
-    sources: [{
-      src: "https://hwivkwlyziwlhqtwtgmg.supabase.co/storage/v1/object/public/jordi/videos/Bife%20Angosto_V1.mp4",
-      type: 'video/mp4'
-    }]
+    type: "youtube",
+    videoId: "u0K-wm28fsY",
   },
   {
-    autoplay: false,
-    controls: true,
-    responsive: true,
-    loop: false,
-    fluid: true,
-    sources: [{
-      src: "https://hwivkwlyziwlhqtwtgmg.supabase.co/storage/v1/object/public/jordi/videos/Hamburguesas_V1.mp4",
-      type: 'video/mp4'
-    }]
+    type: "youtube",
+    videoId: "another-video-id",
   },
-
-
 ];
 
 // button next-prev 
@@ -67,11 +67,11 @@ const SwiperButtonPrev = ({ children }: SwiperButtonProps) => {
 
 
 const Carousel = () => {
-  
+
   const [isPaused, setIsPaused] = useState(false);
 
   const playerRef = useRef(null);
-  
+
   const handlePlayerReady = (player: any) => {
     playerRef.current = player;
 
@@ -96,8 +96,8 @@ const Carousel = () => {
           }}
           modules={[Pagination, Navigation]}
           className="mySwiper relative "
-          onSlideChangeTransitionStart={() => {setIsPaused(true)}}
-          onSlideChangeTransitionEnd={() => {setIsPaused(false)}}
+          onSlideChangeTransitionStart={() => { setIsPaused(true) }}
+          onSlideChangeTransitionEnd={() => { setIsPaused(false) }}
 
         >
           <div className="botones-carrusel only-lg-flex flex justify-between absolute w-full top-[40%]">
@@ -129,12 +129,11 @@ const Carousel = () => {
 
 
           {videoList.map((video, index) => (
-            <SwiperSlide className="pb-[5%] " key={index}>
+            <SwiperSlide className=" " key={index}>
               <div className="myvideo video-container mr-[7%] ml-[7%]">
-                <VideoJS className="object-cover" options={video} onReady={handlePlayerReady} isPaused={isPaused}/>
+                {video.type === "youtube" && <YouTubeVideo videoId={video.videoId} />}
               </div>
             </SwiperSlide>
-
           ))}
 
 
