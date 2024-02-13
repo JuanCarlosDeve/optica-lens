@@ -47,21 +47,21 @@ const FooterCUI = () => {
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3 only-lg">
             <div className=" flex flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] justify-end">
-                <Link href="https://Tiktok.com/Optilents.com" target="_blank">
+                <a href="https://Tiktok.com/Optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/inde.svg" alt="inde icon" />
                   </picture>
-                </Link>
-                <Link href="https://Instagram.com/Optilent's_24.com" target="_blank">
+                </a>
+                <a href="https://Instagram.com/Optilent's_24.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/Instagram.svg" alt="inde icon" />
                   </picture>
-                </Link>
-                <Link href="https://facebook.com/optilents.com" target="_blank">
+                </a>
+                <a href="https://facebook.com/optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/face.svg" alt="face icon" />
                   </picture>
-                </Link>
+                </a>
               </div>
               <span className="flex flex-wrap-reverse justify-end label text-gray-brand">
               Optic Lent's - 2024 © Copyrights.
@@ -74,21 +74,21 @@ const FooterCUI = () => {
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="justify-center mb-3 not-lg">
             <div className=" flex  items-center flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] ">
-                <Link href="https://Tiktok.com/Optilents.com" target="_blank">
+                <a href="https://Tiktok.com/Optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/inde.svg" alt="inde icon" />
                   </picture>
-                </Link>
-                <Link href="https://Instagram.com/Optilent's_24.com" target="_blank">
+                </a>
+                <a href="https://Instagram.com/Optilent's_24.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/Instagram.svg" alt="inde icon" />
                   </picture>
-                </Link>
-                <Link href="https://facebook.com/optilents.com" target="_blank">
+                </a>
+                <a href="https://facebook.com/optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/face.svg" alt="face icon" />
                   </picture>
-                </Link>
+                </a>
               </div>
               <span className="flex flex-wrap-reverse label justify-end text-gray-brand">
               Optic Lent's - 2024 © Copyrights.
