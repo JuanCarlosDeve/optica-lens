@@ -32,7 +32,7 @@ export const navLinks = [
   },
   {
     id: "sedes",
-    title: "Sedes",
+    title: "Sede",
   },
 ];
 

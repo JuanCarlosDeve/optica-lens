@@ -39,15 +39,17 @@ $bg-hero-section: (
 }
 
 .carrusel{
-  //background: url('../public/img/video-poster.jpg') #FFF no-repeat center;
+  background: url("/img/mi-parrilla-bkg-lg.jpg");
+  padding-top: 4rem;
   
   background-size: cover;
   @include a-set($sections-paddings);
 }
 
 .boutiques{
-  background: url('../public/img/boutique-bg.jpg') #FFF no-repeat center;
+  background: url("/img/sede-optica.jpg") #FFF no-repeat center;
   background-size: cover;
+  
   @include a-set($sections-paddings);
 }
 

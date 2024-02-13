@@ -4,6 +4,7 @@ import ProductsList from "@/components/product-list";
 import Link from "next/link";
 import Carousel from "@/components/citrica-ui/carrusel";
 
+
 export default function Home() {
 	return (
 		<>
@@ -17,7 +18,7 @@ export default function Home() {
 								<img className="logo-prime-grill " src={'/img/ojohorus.png'} alt='logo' />
 							</picture>
 							<h2 className="display text-gold-brand">
-								Optica Lets
+								Opti Lent's
 							</h2>
 						</div>
 					</Col>
@@ -33,7 +34,13 @@ export default function Home() {
 							<Col cols={{ lg: 12, md: 6, sm: 4 }} className="mb-[32px]" >
 								
 								<p className="flex text-left copy py-5">
-									Lorem ipsum dolor sit amet consectetur. Orci donec non rhoncus nulla volutpat. Vulputate dolor vestibulum arcu tincidunt sed. Massa scelerisque sed dignissim in amet mi donec morbi nulla. Elementum lorem fermentum at nulla odio porttitor. Posuere suspendisse cras malesuada aenean.
+								Integrantes: <br/> Jackelin Calderón  25.990.283<br/>Yesbeli Marcano 31.926.903<br/>Yolennys Nuñez 24.015.166<br/>Norvelys Arias 25.516.927<br/>Maria Vivas 16.564.313
+									
+								</p>
+
+								<p className="flex text-left copy py-5">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi officiis veniam itaque deserunt explicabo libero fugiat? Quisquam sapiente deserunt error temporibus, magnam accusantium nulla hic amet dolorum iste at?
+
 								</p>
 							</Col>
 							{/* <Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex  justify-end" >
@@ -50,7 +57,7 @@ export default function Home() {
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<div className="py-6">
 							<h2 className="headline text-white">Misión</h2>
-							<p className="title text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime suscipit sunt exercitationem facere eveniet dolorum enim, dolorem temporibus iure saepe nobis dolor expedita cupiditate ipsa accusamus debitis necessitatibus quis reiciendis.</p>
+							<p className="title text-white">En Opti Lents, nuestra misión es proporcionar a nuestros clientes una experiencia integral en cuidado visual, ofreciendo una amplia gama de productos de calidad, desde lentes de contacto hasta gafas de sol, respaldados por un servicio excepcional y tecnología de vanguardia.<br/> Nos comprometemos a satisfacer las necesidades individuales de cada cliente, brindando exámenes visuales precisos, asesoramiento experto y soluciones personalizadas para mejorar su salud ocular y su calidad de vida.<br/>  Nos esforzamos por mantenernos a la vanguardia de la industria óptica, garantizando la excelencia en cada aspecto de nuestro negocio y promoviendo la importancia de la salud visual en nuestra comunidad.</p>
 						</div>
 					</Col>
 				</Container>
@@ -60,13 +67,13 @@ export default function Home() {
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="mision-vision-item-left only-lg" >
 						<div className="py-6">
 							<h2 className="headline text-white">Misión</h2>
-							<p className="title text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi dolorem pariatur eos voluptatibus a quia veritatis laudantium ipsam aspernatur temporibus error sed porro ipsum, minima, expedita doloremque, repellat quo!</p>
+							<p className="title text-white">En Opti Lents, nuestra misión es proporcionar a nuestros clientes una experiencia integral en cuidado visual, ofreciendo una amplia gama de productos de calidad, desde lentes de contacto hasta gafas de sol, respaldados por un servicio excepcional y tecnología de vanguardia.<br/> Nos comprometemos a satisfacer las necesidades individuales de cada cliente, brindando exámenes visuales precisos, asesoramiento experto y soluciones personalizadas para mejorar su salud ocular y su calidad de vida.<br/>  Nos esforzamos por mantenernos a la vanguardia de la industria óptica, garantizando la excelencia en cada aspecto de nuestro negocio y promoviendo la importancia de la salud visual en nuestra comunidad.</p>
 						</div>
 					</Col>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }}>
 						<div className="py-6">
 							<h2 className="headline text-gold-brand">Visión</h2>
-							<p className="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque nihil obcaecati quod, deserunt adipisci quasi perferendis ad maiores sunt? Fugiat unde dolorem dolore ipsam, perspiciatis voluptas iure aliquid autem?</p>
+							<p className="title">En Opti Lents, aspiramos a ser líderes reconocidos en el sector óptico, distinguidos por nuestra excelencia en productos, servicios y atención al cliente.<br/>  Nos esforzamos por expandir nuestra presencia en el mercado nacional e internacional, estableciendo alianzas estratégicas con proveedores de calidad y utilizando tecnologías innovadoras para ofrecer soluciones visuales de vanguardia.<br/>  Buscamos ser un referente en la promoción de la salud visual, educando a la comunidad sobre la importancia del cuidado de los ojos y contribuyendo al bienestar general de nuestros clientes.<br/>  Nuestra visión es ser la primera opción para quienes buscan soluciones ópticas confiables, personalizadas y de alta calidad.</p>
 						</div>
 					</Col>
 				</Container>
@@ -85,15 +92,15 @@ export default function Home() {
 										<picture>
 											<img src={'/img/call.svg'} alt="call logo" />
 										</picture>
-										946 351 770
+										000 000 000
 									</span>
 								</a>
-								<a href="mailto:info@corporacionjordi.com" target="_blank">
+								<a href="mailto:optilents.24@gmail.com" target="_blank">
 									<span className="flex copy text-white gap-[16px] items-center">
 										<picture>
 											<img src={'/img/mail.svg'} alt="mail logo" />
 										</picture>
-										info@corporacionjordi.com
+										optilents.24@gmail.com
 									</span>
 								</a>
 							</div>
@@ -112,15 +119,15 @@ export default function Home() {
 										<picture>
 											<img src={'/img/call.svg'} alt="call logo" />
 										</picture>
-										946 351 770
+										000 000 000
 									</span>
 								</a>
-								<a href="mailto:info@corporacionjordi.com" target="_blank">
+								<a href="mailto:optilents.24@gmail.com" target="_blank">
 									<span className="flex copy text-white gap-[16px] items-center">
 										<picture>
 											<img src={'/img/mail.svg'} alt="mail logo" />
 										</picture>
-										info@corporacionjordi.com
+										optilents.24@gmail.com
 									</span>
 								</a>
 							</div>
@@ -135,15 +142,15 @@ export default function Home() {
 										<picture>
 											<img src={'/img/call.svg'} alt="call logo" />
 										</picture>
-										946 351 770
+										000 000 000
 									</span>
 								</a>
-								<a href="mailto:info@corporacionjordi.com" target="_blank">
+								<a href="mailto:optilents.24@gmail.com" target="_blank">
 									<span className="flex copy text-white gap-[16px] items-center">
 										<picture>
 											<img src={'/img/mail.svg'} alt="mail logo" />
 										</picture>
-										info@corporacionjordi.com
+										optilents.24@gmail.com
 									</span>
 								</a>
 							</div>
@@ -160,23 +167,27 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section id="sedes" className="boutiques">
+			<section id="sedes" className="boutiques ">
+				<div className="backdrop-blur-md">
+
 				<Container >
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center ">
-						<h2 className="headline  mt-28 text-gold-brand">SEDES</h2>
+						<h2 className="headline  mt-28 text-gold-brand">SEDE</h2>
 					</Col>
 				</Container>
 				<Container className="flex justify-between ">
-					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="center">
 						<div className="pt-10">
-							<picture>
+							<Link href='https://maps.app.goo.gl/cRJHczsoUHdU4rCo9' target="_blank"> 
+							<picture className="hover:cursor-pointer">
 								<img src="/img/icons/location_on.svg" alt="" />
 							</picture>
+							</Link>
 							<h2 className="title text-gold-brand">Caracas</h2>
-							<p className="body text-white mt-10">Av. Circunvalación del Golf 428 Tda 19 - C.C La Fontana</p>
+							<p className="body text-black mt-10">Centro comercial Sambil Chacao, piso 1 local #12</p>
 						</div>
 					</Col>
-					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
+					{/* <Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
 						<div className="pt-10">
 							<picture>
 								<img src="/img/icons/location_on.svg" alt="" />
@@ -193,8 +204,9 @@ export default function Home() {
 							<h2 className="title text-gold-brand">Barquisimeto</h2>
 							<p className="body text-white mt-10">Jr. Sargento Lores 889</p>
 						</div>
-					</Col>
+					</Col> */}
 				</Container>
+				</div>
 			</section>
 		</>
 	);

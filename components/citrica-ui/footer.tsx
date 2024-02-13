@@ -40,31 +40,31 @@ const FooterCUI = () => {
                 <picture>
                   <img src={'/img/icons/call.svg'} alt="call logo" />
                 </picture>
-                <span>946 351 770</span>
+                <span>000 000 000</span>
               </div>
             </div>
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3 only-lg">
             <div className=" flex flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] justify-end">
-                <Link href="#">
+                <Link href="https://Tiktok.com/Optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/inde.svg" alt="inde icon" />
                   </picture>
                 </Link>
-                <Link href="#">
+                <Link href="https://Instagram.com/Optilent's_24.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/Instagram.svg" alt="inde icon" />
                   </picture>
                 </Link>
-                <Link href="#">
+                <Link href='https://facebook.com/optilents.com' target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/face.svg" alt="face icon" />
                   </picture>
                 </Link>
               </div>
               <span className="flex flex-wrap-reverse justify-end label text-gray-brand">
-              Optica Lets - 2024 © Copyrights.
+              Optic Lent's - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center flex-wrap label text-gray-brand ">
                 All rights reserved.
@@ -74,24 +74,24 @@ const FooterCUI = () => {
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="justify-center mb-3 not-lg">
             <div className=" flex  items-center flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] ">
-                <Link href="#">
+                <Link href="https://Tiktok.com/Optilents.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/inde.svg" alt="inde icon" />
                   </picture>
                 </Link>
-                <Link href="#">
+                <Link href="https://Instagram.com/Optilent's_24.com" target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/Instagram.svg" alt="inde icon" />
                   </picture>
                 </Link>
-                <Link href="#">
+                <Link href='https://facebook.com/optilents.com' target="_blank">
                   <picture>
                     <img className="h-8" src="img/icons/face.svg" alt="face icon" />
                   </picture>
                 </Link>
               </div>
               <span className="flex flex-wrap-reverse label justify-end text-gray-brand">
-              Optica Lets - 2024 © Copyrights.
+              Optic Lent's - 2024 © Copyrights.
               </span>
               <span className="flex justify-end items-center label flex-wrap text-gray-brand ">
                 All rights reserved.
